@@ -2,3 +2,423 @@
 @import 'global/*.scss';
 @import '**/_*.scss';
 @import '../components/**/*.scss';
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #1D212A;
+}
+
+body {
+  background-color: #F1F3F6;
+  position: relative;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1D212A;
+}
+
+.current {
+  color: #8770FF;
+}
+
+// ---------------- UNIVERSAL CLASSES ---------------------
+
+.back-text {
+  position: absolute;
+  top: -9rem;
+  right: 0;
+  margin: 0 51rem 0 auto;
+  font-size: 18em;
+  font-weight: 300;
+  color: #FBFCFD;
+  z-index: -5;
+}
+
+.pretitle {
+  font-weight: 500;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  color: #B6BFD9;
+  margin-bottom: 1em;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 300;
+  margin-bottom: 1rem;
+
+}
+
+.subtitle {
+  font-size: 1.25em;
+  color: #646464;
+}
+
+// ---------------- BTN ---------------------
+
+.btn {
+  background-color: #8770FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.75em 2em;
+}
+
+.learn {
+  position: relative;
+  text-decoration: none;
+  color: #1D212A;
+}
+
+.learn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -2em;
+  background-image: url(../../src/img/rightarrow.svg);
+  height: 1.5em;
+  width: 1.5em;
+}
+
+// ---------------- HEADER ---------------------
+
+.header {
+  width: 60%;
+  height: 4.5em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__language-wrap {
+    display: inline-flex;
+  }
+
+  &__list {
+    display: inline-flex;
+
+  }
+
+  &__item {
+    margin-right: 1.6em;
+  }
+
+  &__login {
+    text-decoration: none;
+    color: #1D212A;
+    margin-right: 1em;
+  }
+}
+
+// ---------------- INTRO ---------------------
+
+.intro {
+  height: 70vh;
+  padding-top: 10em;
+  margin-bottom: 18.5em;
+
+  &__wrapper {
+    width: 60%;
+    height: 23em;
+    margin: 0 auto;
+  }
+
+  &__title-wrapper {
+    width: 27.3em;
+  }
+
+  &__subtitle {
+    margin-bottom: 2.5em;
+  }
+
+  &__btn {
+    margin-right: 1em;
+  }
+}
+
+
+
+
+.free {
+  color: #32D989;
+  font-weight: bold;
+}
+
+// ---------------- AI ---------------------
+
+.ai {
+  position: relative;
+  background: {
+    image: url(../img/screens.svg);
+    repeat: no-repeat;
+    size: 50%;
+    position: 0 3em;
+  }
+  
+  // .ai__wrapper
+
+  &__wrapper {
+    width: 60%;
+    margin: 0 auto 12rem;
+  }
+
+  &__content-wrapper {
+    width: 25vw;
+    margin: 0 0 0 52%;
+  }
+
+  // .ai__title-wrapper
+
+  &__title-wrapper {
+    margin-bottom: 3em;
+  }
+
+  // .ai__pretitle
+
+  &__pretitle {
+
+  }
+
+  // .ai__title
+
+  &__title {
+  }
+
+  // .ai__subtitle
+
+  &__subtitle {
+  }
+
+  // .ai__advantages
+
+  &__advantages {
+  }
+}
+
+.advantages {
+
+  // .advantages__list
+
+  &__list {
+    list-style-image: url('./../img/Done!.svg');
+    margin-bottom: 2.8em;
+    padding-left: 2em;
+  }
+
+  // .advantages__item
+
+  &__item {
+   
+
+  // .advantages__btn
+
+  &__btn {
+  }
+
+  // .advantages__learn
+
+  &__learn {
+  }
+}
+.btn {
+}
+.learn {
+}
+}
+
+// ---------------- HOW ---------------------
+
+.how {
+
+  // .how__wrapper
+
+  &__wrapper {
+    width: 60%;
+    margin: 0 auto 12rem auto;
+  }
+
+  // .how__title-wrapper
+
+  &__title-wrapper {
+    width: 30rem;
+    margin: 0 0 3.75rem 40%;
+  }
+
+  // .how__pretitle
+
+  &__pretitle {
+  }
+
+  // .how__title
+
+  &__title {
+  }
+
+  // .how__subtitle
+
+  &__subtitle {
+  }
+
+  // .how__steps-wrap
+
+  &__steps-wrap {
+    margin: 0 0 0 40%;
+    width: 38.5rem;
+    font-weight: 400;
+  }
+ 
+  // .how__numbers
+
+  &__numbers {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    color: #8770FF;
+    margin-bottom: 2rem;
+  }
+
+  // .how__number
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 1em;
+    border: 2px #8770FF solid;
+    border-radius: 50%;
+  }
+
+
+  // .how__steps
+
+  &__steps {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+  }
+
+  // .how__step
+
+  &__step {
+  }
+
+  // .how__vid
+
+  &__vid {
+    background: linear-gradient(to bottom right, #AA9AFF, #8770FF);
+    border-radius: 1em;
+    width: 21.875em;
+    height: 15.9em;
+  }
+}
+.pretitle {
+}
+.title {
+}
+.subtitle {
+}
+
+
+
+
+// ---------------- EXPLORE ---------------------
+
+.explore {
+  position: relative;
+
+  &__back-text {
+    // background-image: linear-gradient(#F1F3F6, #FDFDFE);
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin: 0 auto;
+  }
+
+  // explore__wraper
+
+  &__wrapper {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+  }
+  // .explore__content-wrap
+
+  &__content-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .explore__title-wrap
+
+  &__title-wrap {
+  }
+
+  // .explore__pretitle
+
+  &__pretitle {
+  }
+
+  // .explore__title
+
+  &__title {
+  }
+
+  // .explore__subtitle
+
+  &__subtitle {
+  }
+}
+.back-text {
+}
+.pretitle {
+}
+.title {
+}
+.subtitle {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.feedback {
+  position: relative;
+}
