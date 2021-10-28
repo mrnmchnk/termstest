@@ -18,6 +18,10 @@ body {
 h1 {
   font-weight: 300;
 }
+h5 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
 
 ul {
   list-style: none;
@@ -41,8 +45,11 @@ a {
   margin: 0 51rem 0 auto;
   font-size: 18em;
   font-weight: 300;
-  color: #FBFCFD;
+  background: linear-gradient( #FFFFFF 0%, #F1F3F6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   z-index: -5;
+  text-align: left;
 }
 
 .pretitle {
@@ -73,12 +80,15 @@ a {
   border: none;
   border-radius: 0.5em;
   padding: 0.75em 2em;
+  cursor: pointer;
 }
 
 .learn {
   position: relative;
   text-decoration: none;
   color: #1D212A;
+  cursor: pointer;
+
 }
 
 .learn::after {
@@ -340,13 +350,9 @@ a {
 
 .explore {
   position: relative;
-
+  margin-bottom: 13.6em;
   &__back-text {
-    // background-image: linear-gradient(#F1F3F6, #FDFDFE);
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-    -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-    color: transparent;
+    
     margin: 0 auto;
   }
 
@@ -363,6 +369,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 8em;
   }
 
   // .explore__title-wrap
@@ -384,26 +391,542 @@ a {
 
   &__subtitle {
   }
+
+   // .explore__slider
+
+   &__slider {
+  }
+
+  // .explore__background
+
+  &__background {
+    position: relative;
+    background-color: #F9FAFC;
+    box-shadow: 0 2rem 3rem 1rem #D8E0EC ;
+    width: 51.5em;
+    height: 28.6em;
+  }
 }
-.back-text {
+
+// ---------------- EXPLORE SLIDER ---------------------
+
+.slider {
+
+  // .slider__list
+
+  &__list {
+    position: relative;
+    top: -4.375em;
+    left: 0;
+  }
+
+
+  // .slider__wrap
+
+  &__wrap {
+    padding: 1.5rem;
+  }
+
+  // .slider__item
+
+  &__item {
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    box-shadow: 0 2rem 3rem -1rem #D8E0EC ;
+    width: 16rem;
+    height: 26.6rem;
+    margin: 0 1.875em;
+    flex-shrink: 0;
+
+
+    // .slider__item_privacy
+
+    &_privacy {
+    }
+
+    
+
+    // .slider__item_terms
+
+    &_terms {
+    }
+
+    // .slider__item_cookie
+
+    &_cookie {
+    }
+
+    // .slider__item_eula
+
+    &_eula {
+    }
+
+    // .slider__item_disclaimer
+
+    &_disclaimer {
+    }
+
+    // .slider__item_refund
+
+    &_refund {
+    }
+  }
+
+  // .slider__icon
+
+  &__icon {
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-bottom: 1rem;
+  }
+
+  // .slider__title
+
+  &__title {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 1rem;
+
+  }
+
+  // .slider__subtitle
+
+  &__subtitle {
+    margin-bottom: 1.8em;
+  }
+
+  // .slider__btn-wrap
+
+  &__btn-wrap {
+    text-align: center;
+  }
+
+  // .slider__btn
+
+  &__btn {
+    width: 90%;
+    margin-bottom: 0.75em;
+  }
+
+  // .slider__learn
+
+  &__learn {
+  }
+
+  &__chevrons {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding: 0 3em 2.4em 0;
+  }
+
+  &__chevron {
+    margin: 0 2em 0 2em;
+    width: 1.5em;
+    height: 1.5em;
+  }
 }
-.pretitle {
+
+.chevron {
+
+  // .chevron__left
+
+  &__left {
+    cursor: pointer;
+  }
+
+  // .chevron__right
+
+  &__right {
+    cursor: pointer;
+  }
 }
-.title {
+
+// ---------------- COMPARE ---------------------
+
+.compare {
+  text-align: center;
+
+  // .compare__wrap
+
+  &__wrap {
+    position: relative;
+    width: 60%;
+    margin: auto;
+  }
+
+  // .compare__content-wrap
+
+  &__content-wrap {
+    background-color: #EBEEF3;
+    background-size: 70.7em 70.7em;
+    width: 70.7em;
+    height: 70.7em;
+    border-radius: 50%;
+    padding-top: 9em;
+  }
+  // .compare__pretitle
+
+  &__pretitle {
+  }
+
+  // .compare__title
+
+  &__title {
+  }
+
+  // .compare__subtitle
+
+  &__subtitle {
+    margin-bottom: 5em;
+  }
+
+  // .compare__price
+
+  &__price {
+    position: relative;
+    margin-bottom: 5.75em;
+  }
+
+  // .compare__six
+
+  &__six {
+    font-size: 4em;
+  }
+
+  &__dec {
+    position: relative;
+    top: -3em;
+  }
+
+  // .compare__benefits
+
+  &__benefits {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 1em;
+  }
+
+  // .compare__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 7em;
+  }
+
+  // .compare__item
+
+  &__item {
+    margin: 2em 2em;
+    width: 8em;
+
+  }
 }
-.subtitle {
+
+.price {
+
+  // .price__title
+
+  &__title {
+  }
+
+  // .price__subtitle
+
+  &__subtitle {
+  }
 }
 
+// ---------------- SECURE ---------------------
+
+.secure {
+  background-image: url(../img/Legal_Protection_You.svg);
+  color: #FFFFFF;
+  height: 779px;
+  
+  // .secure__wrap
+
+  &__wrap {
+    width: 60%;
+    margin: auto;
+  }
+
+  // .secure__title-wrap
+
+  &__title-wrap {
+    padding-top: 7.5em;
+    margin-bottom: 13em;
+  }
+
+  // .secure__pretitle
+
+  &__pretitle {
+    color: #FFFFFF;
+
+  }
+
+  // .secure__title
+
+  &__title {
+  }
+
+  // .secure__subtitle
+
+  &__subtitle {
+    color: #FFFFFF;
+
+  }
+
+  // .secure__benefits
+
+  &__benefits {
+  }
+
+  // .secure__list
+
+  &__list {
+    position: relative;
+    padding-left: 0;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  // .secure__item
+
+  &__item {
+    margin-right: 3em;
+
+    // .secure__item_policies
+
+    &_policies {
+    }
+
+    // .secure__item_business
+
+    &_business {
+      position: relative;
+      top: -5em;
+    }
+
+    // .secure__item_pageviews
+
+    &_pageviews {
+      position: relative;
+      top: -10em;
+    }
+  }
+
+  // .secure__icon
+
+  &__icon {
+  }
+}
+
+.item {
+
+  // .item__title
+
+  &__title {
+    font-size: 2.375em;
+  }
+
+  // .item__subtitle
+
+  &__subtitle {
+  }
+}
+
+.feedback {
+
+ 
+  // .feedback__wrap
+
+  &__wrap {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+   // .feedback__back-text
+
+   &__back-text {
+    position: absolute;
+    top: -3rem;
+    left: -5rem;
+    font-size: 18em;
+    font-weight: 300;
+    background: linear-gradient( #FFFFFF 0%, #F1F3F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    text-align: left;
+
+  }
+  // .feedback__content-wrap
+
+  &__content-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8em;
+    padding-top: 7.7em;
+  }
+
+  // .feedback__title-wrap
+
+  &__title-wrap {
+  }
+
+  // .feedback__pretitle
+
+  &__pretitle {
+  }
+
+  // .feedback__title
+
+  &__title {
+  }
+
+  // .feedback__subtitle
+
+  &__subtitle {
+  }
+}
+
+.feedback {
+
+  // .feedback__slider
+
+  &__slider {
+    margin-bottom: 3.75rem;
+  }
+
+  // .feedback__background
+
+  &__background {
+    position: relative;
+    background-color: #F9FAFC;
+    box-shadow: 0 2rem 3rem 1rem #D8E0EC ;
+    width: 51.5em;
+    height: 18em;
+  }
+
+  // .feedback__list
+
+  &__list {
+    position: relative;
+    top: -4.375em;
+    left: 0;
+  }
+
+  // .feedback__item
+
+  &__item {
+  }
+
+  // .feedback__item-wrap
+
+  &__item-wrap {
+
+  }
+
+  // .feedback__title
+
+  &__title {
+  }
+}
+.review {
+
+  // .review__wrap
+
+  &__wrap {
+    display: flex;
+
+  }
+
+  // .review__photo
+
+  &__photo {
+    margin-right: 1em;
+  }
+
+  &__person {
+  }
+
+  // .review__name
+
+  &__name {
+  }
+
+  // .review__subttile
+
+  &__subttile {
+  }
+
+  // .review__card
+
+  &__card {
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    box-shadow: 0 2rem 3rem -1rem #D8E0EC ;
+    width: 33.75rem;
+    height: 16rem;
+    margin-right: 1.875em;
+    flex-shrink: 0;
+    padding: 2em 5em;
+
+  }
+
+  // .review__quote
+
+  &__quote {
+    margin: 0 0 0.625em 0;
+  }
+
+  // .review__rating-wrap
+
+  &__rating-wrap{
+    display: flex;
+    align-items: center;
+  }
 
 
+  // .review__rating
 
+  &__rating {
+    margin-right: 0.5em;
+  }
 
+  &__star {
+    width: 16px;
+    height: 16px;
+  }
+}
 
+.trustpilot {
+  display: flex;
+  justify-content: center;
 
+  // .trustpilot__text
 
+  &__text {
+  }
 
+  // .trustpilot__stars
 
+  &__stars {
+  }
 
+  // .trustpilot__logo
+
+  &__logo {
+  }
+}
 
 
 
