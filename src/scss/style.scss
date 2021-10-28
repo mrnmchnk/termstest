@@ -25,6 +25,7 @@ h5 {
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 a {
@@ -942,7 +943,7 @@ a {
 
   &__title-wrap {
     width: 32em;
-    margin: auto;
+    margin: 0 auto 3.75rem auto;
     text-align: center;
   }
 
@@ -1173,6 +1174,7 @@ a {
 
 
 
+@import '../scss/footer.scss';
 
 
 
