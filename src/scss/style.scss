@@ -106,6 +106,10 @@ a {
 // ---------------- HEADER ---------------------
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 60%;
   height: 4.5em;
   margin: 0 auto;
@@ -137,6 +141,9 @@ a {
 // ---------------- INTRO ---------------------
 
 .intro {
+  background-image: url(../img/intro_background.svg);
+  // background-image: url(../img/intro_screen.svg);
+  background-repeat: no-repeat;
   height: 70vh;
   padding-top: 10em;
   margin-bottom: 18.5em;
@@ -266,7 +273,7 @@ a {
 
   &__title-wrapper {
     width: 30rem;
-    margin: 0 0 3.75rem 40%;
+    margin: 0 0 -1.25rem 40%;
   }
 
   // .how__pretitle
@@ -287,33 +294,67 @@ a {
   // .how__steps-wrap
 
   &__steps-wrap {
-    margin: 0 0 0 40%;
-    width: 38.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     font-weight: 400;
+    margin-right: 7rem;
+    height: 18.5rem;
   }
  
+
+  // .how__numbers
+  
+  &__numbers-wrap {
+  }
+
   // .how__numbers
 
   &__numbers {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 1.5em;
     color: #8770FF;
     margin-bottom: 2rem;
+    padding-right: 10rem;
   }
 
   // .how__number
 
   &__number {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     width: 2.5em;
     height: 2.5em;
     padding: 1em;
-    border: 2px #8770FF solid;
+    border: 1px #8770FF solid;
     border-radius: 50%;
+
+    
+    &::after {
+      content: "";
+      position: absolute;
+      right: -5em;
+      border-bottom: 1px solid #8770FF;
+      width: 5em;
+    }
   }
+
+  &__number-one {
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -3em;
+      border-bottom: 1px solid #8770FF;
+      width: 3em;
+      z-index: -5;
+    }
+  }
+
+
 
 
   // .how__steps
@@ -327,15 +368,31 @@ a {
   // .how__step
 
   &__step {
+    margin-right: 1em;
   }
 
   // .how__vid
 
   &__vid {
-    background: linear-gradient(to bottom right, #AA9AFF, #8770FF);
+    position: relative;
+    align-self: flex-start;
+    background-image: linear-gradient(145deg, #AA9AFF, #8770FF);
+    // background-repeat: no-repeat;
+    // background-position: 0 0;
     border-radius: 1em;
     width: 21.875em;
     height: 15.9em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 21.875em;
+      top: 50%;
+      border-bottom: 1px solid #B6BFD9;
+      width: 30em;
+      z-index: -5;
+    }
+    
   }
 }
 
@@ -585,10 +642,10 @@ a {
   &__price {
     background-image: url(../img/Marker_circle.svg);
     background-repeat: no-repeat;
-    background-position: 53%;
+    background-position: 53% top;
     overflow: visible;
     position: relative;
-    margin-bottom: 5.75em;
+    padding: 4rem;
   }
 
   // .compare__six
