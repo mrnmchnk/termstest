@@ -1,25 +1,99 @@
+// ---------------- READY ---------------------
+
+
+
+.ready {
+  color: #1D212A  ;
+
+  
+
+  // .ready__wrapper
+
+  &__wrapper {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 60%;
+    top: -3.8rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 1em;
+    box-shadow: 0 1rem 1rem 1rem rgba(34,60,80,0.1);
+
+  }
+
+  // .ready__title-wrapper
+
+  &__title-wrapper {
+    width: 35em;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 3.8em;
+  }
+
+  // .ready__title
+
+  &__title {
+  }
+
+  // .ready__subtitle
+
+  &__subtitle {
+  }
+
+  // .ready__btn-wrap
+
+  &__btn-wrap {
+    width: 35%;
+    margin: 0 auto;
+    padding-bottom: 3.75rem;
+  }
+  // .ready__btn
+
+  &__btn {
+  }
+  
+  // .ready__learn
+
+  &__learn {
+
+  }
+}
+
+// ---------------- FOOTER ---------------------
+
 .footer {
+  position: relative;
   background-image: url(../img/footer_backgroung.svg);
   color: #FFFFFF;
   height: 780px;
 
-  // .footer__wrap
+  & a {
+    color: #FFFFFF;
+  }
+  // .footer__wrapper
 
-  &__wrap {
+  &__wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5em;
     width: 60%;
-    margin: auto;
+    margin: 0 auto;
   }
 
-  // .footer__wrap
+  // .footer__content-wrapper
 
-  &__content-wrap {
+  &__content-wrapper {
     display: flex;
-
+    justify-content: space-between;
   }
 
   // .footer__title
 
   &__title {
+    line-height: 1;
   }
 
   // .footer__subtitle
@@ -36,7 +110,19 @@
   // .footer__legal
 
   &__legal {
+    width: 60%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
 
+   // .footer__legal-wrap
+
+   &__legal-wrap{
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -45,6 +131,7 @@
   // .info__title
 
   &__title {
+    margin-bottom: 2rem;
   }
 
   // .info__list
@@ -56,6 +143,7 @@
   // .info__item
 
   &__item {
+    margin-bottom: 0.5em;
   }
 }
 .copyright {
@@ -63,13 +151,27 @@
 
 .legal {
 
+
+  
+  
   // .legal__list
 
   &__list {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly; 
   }
 
   // .legal__item
 
   &__item {
   }
+}
+
+hr {
+  color: #FFFFFF;
+}
+
+.ready a {
+  color: #1D212A;
 }

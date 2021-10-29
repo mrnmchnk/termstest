@@ -41,7 +41,7 @@ a {
 
 .back-text {
   position: absolute;
-  top: -9rem;
+  top: -6rem;
   right: 0;
   margin: 0 51rem 0 auto;
   font-size: 18em;
@@ -346,7 +346,8 @@ a {
 
 .explore {
   position: relative;
-  margin-bottom: 13.6em;
+  padding-bottom: 5em;
+  overflow: hidden;
   &__back-text {
     
     margin: 0 auto;
@@ -545,17 +546,17 @@ a {
 .compare {
   text-align: center;
 
-  // .compare__wrap
+  // .compare__wrapper
 
-  &__wrap {
+  &__wrapper {
     position: relative;
     width: 60%;
     margin: auto;
   }
 
-  // .compare__content-wrap
+  // .compare__content-wrapper
 
-  &__content-wrap {
+  &__content-wrapper {
     background-color: #EBEEF3;
     background-size: 70.7em 70.7em;
     width: 70.7em;
@@ -582,6 +583,10 @@ a {
   // .compare__price
 
   &__price {
+    background-image: url(../img/Marker_circle.svg);
+    background-repeat: no-repeat;
+    background-position: 53%;
+    overflow: visible;
     position: relative;
     margin-bottom: 5.75em;
   }
@@ -601,10 +606,11 @@ a {
 
   &__benefits {
     position: absolute;
-    bottom: 0;
+    bottom: -3em;
     width: 100%;
     background-color: #FFFFFF;
     border-radius: 1em;
+    box-shadow: 0 1em 2em rgba(34, 60, 80, 0.2);
   }
 
   // .compare__list
@@ -645,16 +651,16 @@ a {
   color: #FFFFFF;
   height: 779px;
   
-  // .secure__wrap
+  // .secure__wrapper
 
-  &__wrap {
+  &__wrapper {
     width: 60%;
     margin: auto;
   }
 
-  // .secure__title-wrap
+  // .secure__title-wrapper
 
-  &__title-wrap {
+  &__title-wrapper {
     padding-top: 7.5em;
     margin-bottom: 13em;
   }
@@ -740,11 +746,11 @@ a {
 // ---------------- FEEDBACK ---------------------
 
 .feedback {
-
+  overflow: hidden;
  
-  // .feedback__wrap
+  // .feedback__wrapper
 
-  &__wrap {
+  &__wrapper {
     position: relative;
     width: 60%;
     margin: 0 auto;
@@ -765,9 +771,9 @@ a {
     text-align: left;
 
   }
-  // .feedback__content-wrap
+  // .feedback__content-wrapper
 
-  &__content-wrap {
+  &__content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -775,9 +781,9 @@ a {
     padding-top: 7.7em;
   }
 
-  // .feedback__title-wrap
+  // .feedback__title-wrapper
 
-  &__title-wrap {
+  &__title-wrapper {
   }
 
   // .feedback__pretitle
@@ -912,6 +918,11 @@ a {
   display: flex;
   justify-content: center;
 
+  & p, img {
+    margin-right: 1rem;
+
+  }
+
   // .trustpilot__text
 
   &__text {
@@ -928,20 +939,21 @@ a {
   }
 }
 
+
 // ---------------- DISCOVER ---------------------
 
 .discover {
 
 
-  // .discover__wrap
+  // .discover__wrapper
 
-  &__wrap {
-    width: 60%;
+  &__wrapper {
+    width: 61%;
     margin: 0 auto 12rem auto;
   }
-  // .discover__title-wrap
+  // .discover__title-wrapper
 
-  &__title-wrap {
+  &__title-wrapper {
     width: 32em;
     margin: 0 auto 3.75rem auto;
     text-align: center;
@@ -1015,16 +1027,16 @@ a {
 .questions {
 
 
-  // .questions__wrap
+  // .questions__wrapper
 
-  &__wrap {
+  &__wrapper {
     width: 60%;
     margin: 0 auto 12rem auto;
   }
 
-  // .questions__title-wrap
+  // .questions__title-wrapper
 
-  &__title-wrap {
+  &__title-wrapper {
     width: 45em;
     margin: auto;
     text-align: center;
@@ -1050,7 +1062,7 @@ a {
 
 	&__menu {
     flex-shrink: 0;
-
+    margin-right: 4.5rem;
 		}
 
   &__container {
@@ -1082,9 +1094,9 @@ a {
 }
 .questions {
 
-  // .questions__list-wrap
+  // .questions__list-wrapper
 
-  &__list-wrap {
+  &__list-wrapper {
   }
 
   // .questions__list
@@ -1130,47 +1142,7 @@ a {
 }
 }
 
-// ---------------- READY ---------------------
 
-.ready {
-
-  // .ready__wrap
-
-  &__wrap {
-    width: 60%;
-    margin: 0 auto 12rem auto;
-  }
-
-  // .ready__title-wrap
-
-  &__title-wrap {
-    width: 35em;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 3.75rem;
-  }
-
-  // .ready__title
-
-  &__title {
-  }
-
-  // .ready__subtitle
-
-  &__subtitle {
-  }
-
-  // .ready__btn
-
-  &__btn {
-  }
-  
-  // .ready__learn
-
-  &__learn {
-
-  }
-}
 
 
 
