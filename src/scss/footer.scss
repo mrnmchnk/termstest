@@ -42,9 +42,9 @@
   &__subtitle {
   }
 
-  // .ready__btn-wrap
+  // .ready__btn-wrapper
 
-  &__btn-wrap {
+  &__btn-wrapper {
     width: 35%;
     margin: 0 auto;
     padding-bottom: 3.75rem;
@@ -59,6 +59,8 @@
   &__learn {
 
   }
+
+
 }
 
 // ---------------- FOOTER ---------------------
@@ -102,9 +104,9 @@
     color: #FFFFFF;
   }
 
-  // .footer__list-wrap
+  // .footer__list-wrappper
 
-  &__list-wrap {
+  &__list-wrapper {
   }
 
   // .footer__legal
@@ -118,9 +120,9 @@
     margin: 0 auto;
   }
 
-   // .footer__legal-wrap
+   // .footer__legal-wrapper
 
-   &__legal-wrap{
+   &__legal-wrapper {
     display: flex;
     justify-content: space-between;
   }
@@ -165,7 +167,26 @@
   // .legal__item
 
   &__item {
+   
   }
+
+  &__item-language {
+    position: relative;
+
+      &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0.125em;
+      right: -2em;
+      background-image: url(../img/down_arrow_white.svg);
+      height: 1.5em;
+      width: 1.5em;
+      }
+  }
+
+
+  
 }
 
 hr {
