@@ -40,6 +40,14 @@ a {
   color: #8770FF;
 }
 
+.desktop-hidden {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 // ---------------- UNIVERSAL CLASSES ---------------------
 
 .wrapper {
@@ -96,7 +104,7 @@ a {
   text-decoration: none;
   color: #1D212A;
   cursor: pointer;
-
+  margin-left: 1em;
 }
 
 .learn::after {
@@ -145,11 +153,27 @@ a {
   }
 }
 
+/*---------------- BURGER ----------------*/
+
+.burger {
+  position: absolute;
+  top: 1.25em;
+  right: 2em;
+}
+
+.bar {
+  width: 1.225em;
+  height: 0.1875em;
+  background-color: #1D212A;
+  margin: 6px 0;
+}
+
+
+
 // ---------------- INTRO ---------------------
 
 .intro {
   background-image: url(../img/intro_background.svg);
-  // background-image: url(../img/intro_screen.svg);
   background-repeat: no-repeat;
   height: 70vh;
   padding-top: 10em;
@@ -245,7 +269,8 @@ a {
   // .advantages__item
 
   &__item {
-   
+   margin-bottom: 0.7em;
+
 
   // .advantages__btn
 
@@ -299,6 +324,7 @@ a {
 
   &__steps-wrap {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-end;
     font-weight: 400;
@@ -340,9 +366,9 @@ a {
     &::after {
       content: "";
       position: absolute;
-      right: -5em;
+      left: 100%;
       border-bottom: 1px solid #8770FF;
-      width: 5em;
+      width: 173%;
     }
   }
 
@@ -351,9 +377,9 @@ a {
     &::before {
       content: "";
       position: absolute;
-      right: 2.4em;
+      right: 100%;
       border-bottom: 1px solid #8770FF;
-      width: 5em;
+      width: 7em;
       z-index: -5;
     }
   }
@@ -372,7 +398,12 @@ a {
   // .how__step
 
   &__step {
-    margin-right: 1em;
+  }
+
+  // .how__step-two
+
+  &__step-two {
+    margin: 0 1rem;
   }
 
   // .how__vid
@@ -490,7 +521,7 @@ a {
     background-color: #FFFFFF;
     border-radius: 0.5rem;
     box-shadow: 0 2rem 3rem -1rem #D8E0EC ;
-    width: 16rem;
+    width: 16rem !important;
     height: 26.6rem;
     margin: 0 1.875em;
     flex-shrink: 0;
@@ -568,6 +599,7 @@ a {
   // .slider__learn
 
   &__learn {
+    // display: block;
   }
 
   &__chevrons {
@@ -617,7 +649,6 @@ a {
 
   &__cards {
     position: absolute;
-    display: inline-block;
   }
 
   // .compare__cards-44
@@ -677,7 +708,6 @@ a {
 
   &__content-wrapper {
     background-color: #EBEEF3;
-    background-size: 70.7em 70.7em;
     width: 70.7em;
     height: 70.7em;
     border-radius: 50%;
@@ -1280,5 +1310,6 @@ a {
 .feedback {
   position: relative;
 }
+
 
 

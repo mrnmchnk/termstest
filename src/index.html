@@ -12,6 +12,8 @@
       ПОЧИНИТЬ СЛАЙДЕРЫ
       белая линия в секьюр
 
+      desktop-hidden -- спрятанные в десктопе
+      tablet-hidden -- спрятанные в тэблет и мобилке
  -->
 
 <body>
@@ -21,14 +23,17 @@
   <!--------------------------------------------- MAIN --------------------------------------------->
 
       <section class="intro">
+        <img class="desktop-hidden" src="img/tablet_intro_image.svg" alt="">
         <div class="intro__wrapper wrapper">
           <div class="intro__title-wrapper">
-            <p class="pretitle intro__pretitle">Powered By AI</p>
+            <p class="pretitle intro__pretitle tablet-hidden">Powered By AI</p>
+            <p class="pretitle intro__pretitle desktop-hidden">AI-Powered</p>
             <h2 class="title intro__title">
-              The smartest,
-              fastest way to Legal Aggrements
+              The smartest,<br>
+              fastest way to<br>
+              Legal Aggrements
             </h2>
-            <p class="subtitle intro__subtitle">
+            <p class="subtitle intro__subtitle tablet-hidden">
               Generate your <b>Privacy Policy</b>,
               <b>Terms of Use</b> or <b>Cookie Policy</b> for <span class="free">free</span>
             </p>
@@ -47,16 +52,26 @@
         <div class="ai__wrapper wrapper">
           <div class="ai__content-wrapper">
             <div class="ai__title-wrapper">
-              <p class="pretitle ai__pretitle">Discover Possibilities</p>
-              <h2 class="title ai__title">Streamline Your Purpose with AI</h2>
-              <p class="subtitle ai__subtitle">
+              <p class="pretitle ai__pretitle tablet-hidden">Discover Possibilities</p>
+              <p class="pretitle ai__pretitle desktop-hidden">take a look</p>
+              <h2 class="title ai__title tablet-hidden">Streamline Your Purpose with AI</h2>
+              <h2 class="title ai__title desktop-hidden">AI + ITerms to do better</h2>
+              <p class="subtitle ai__subtitle tablet-hidden">
                 Streamline cost-effective solutions for your business.
                 Generate legally compliant documents seamlessly 
                 with customizable agreements and policies for your website
                 or mobile app anytime, anywhere with iTerms.
               </p>
+              <p class="subtitle ai__subtitle desktop-hidden">
+                Create a seamless payment experience for your customers
+                while using leading technology that adapts to any business,
+                industry, platform, or shopper journey. You’ll be up and running
+                quickly, able to add payment methods easily and increase your
+                conversion rates. Enjoy flexible features to fit your business with
+                a single integration:.
+              </p>
             </div>
-            <ul class="advantages__list ai__advantages">
+            <ul class="advantages__list ai__advantages tablet-hidden">
               <li class="advantages__item">Unlimited downloads for 9.95 a one-time fee  </li>
               <li class="advantages__item">All legal agreements confirmed by a practicing lawyer</li>
               <li class="advantages__item">EU/US and main privacy laws covered</li>
@@ -65,6 +80,13 @@
               <li class="advantages__item">Securely host your policies on our platform</li>
               <li class="advantages__item">Easy embed policy on your domain</li>
               <li class="advantages__item">Suitable for most Web/Mobile apps</li>
+            </ul>
+            <ul class="advantages__list ai__advantages desktop-hidden">
+              <li class="advantages__item">Confirmed by a lawyer</li>
+              <li class="advantages__item">Legal updates with AI</li>
+              <li class="advantages__item">The cheapest among competitors</li>
+              <li class="advantages__item">Clear and understandable</li>
+              <li class="advantages__item">We host it for you</li>
             </ul>
             <div>
               <button class="btn advantages__btn">Generate</button>
@@ -79,28 +101,35 @@
       <section class="how">
         <div class="how__wrapper wrapper">
           <div class="how__title-wrapper">
-            <p class="pretitle how__pretitle">Easy & Cost-Effective</p>
+            <p class="pretitle how__pretitle tablet-hidden">Easy & Cost-Effective</p>
+            <p class="pretitle how__pretitle desktop-hidden">Easy how to eat cookies</p>
             <h2 class="title how__title">How it works?</h2>
-            <p class="subtitle how__subtitle">
+            <p class="subtitle how__subtitle tablet-hidden">
               Numerous legal agreements accessible at the touch
               of your fingerprints for your website or mobile app.
             </p>
+            <p class="subtitle how__subtitle desktop-hidden">
+              Create a free terms and conditions agreement
+              (aka terms of use or terms of service)
+              for your website or app.
+            </p>
           </div>
           <div class="how__steps-wrap">
-            <div class="how__vid">
-              <!-- <img src="/src/img/Bryan.png" alt=""> -->
-            </div>
+            
             <div class="how__numbers-wrap">
               <div class="how__numbers">
                 <p class="how__number how__number-one">1</p>
-                <p class="how__number">2</p>
-                <p class="how__number">3</p>
+                <p class="how__number how__number-two">2</p>
+                <p class="how__number how__number-three">3</p>
               </div>
               <div class="how__steps">
                 <p class="how__step">Choose Your<br>Desired Policy </p>
-                <p class="how__step">Collaborate<br>withour<br>AI Assistant</p>
+                <p class="how__step how__step-two">Collaborate<br>withour<br>AI Assistant</p>
                 <p class="how__step">Collect Your<br>Legal Document</p>
               </div>
+            </div>
+            <div class="how__vid">
+              <!-- <img src="/src/img/Bryan.png" alt=""> -->
             </div>
           </div>
         </div>
@@ -114,19 +143,26 @@
           <p class="back-text explore__back-text">Solutions</p>
           <div class="explore__content-wrap">
             <div class="explore__title-wrap">
-              <p class="pretitle explore__pretitle">Intuitively Made For Your Business</p>
-              <h2 class="title explore__title">Explore iTerms<br>Solutions </h2>
+              <p class="pretitle explore__pretitle tablet-hidden">Intuitively Made For Your Business</p>
+              <p class="pretitle explore__pretitle desktop-hidden">for your business</p>
+              <h2 class="title explore__title tablet-hidden">Explore iTerms<br>Solutions</h2>
+              <h2 class="title explore__title desktop-hidden">Explore of our<br>Solutions</h2>
             </div>
-            <p class="subtitle explore__subtitle">
+            <p class="subtitle explore__subtitle tablet-hidden">
               Regardless of your requirements,<br>
               iTerms has a solution ready for you to utilize.
+            </p>
+            <p class="subtitle explore__subtitle desktop-hidden">
+              Create a free terms and conditions agreement
+              (aka terms of use or terms of service)
+              for your website or app.
             </p>
           </div>
 
     <!--------------------------------------------- EXPLORE SLIDER --------------------------------------------->
   
-          <div class="explore__slider swiper mySwiper">
-            <div class="explore__background">
+          <div class="explore__slider  explore__background">
+            <div class=" swiper mySwiper">
               <ul class="slider slider__list swiper-wrapper">
     
                 <li class="slider__item slider__item_privacy swiper-slide">
@@ -153,7 +189,7 @@
                       Legal agreements between a service provider and
                       an individual who wishes to use their service.
                     </p>
-                    <div>
+                    <div class="slider__btn-wrap">
                       <button class="btn slider__btn">Generate</button>
                       <a class="learn slider__learn" href="#">Learn more</a>
                     </div>
@@ -168,7 +204,7 @@
                       A declaration to users disclosing what user data
                       is collected while using their platform and what it is used for.
                     </p>
-                    <div>
+                    <div class="slider__btn-wrap">
                       <button class="btn slider__btn">Generate</button>
                       <a class="learn slider__learn" href="#">Learn more</a>
                     </div>
@@ -183,7 +219,7 @@
                       A legal contract between developer/vendor
                       and user who has purchased the software.
                     </p>
-                    <div>
+                    <div class="slider__btn-wrap">
                       <button class="btn slider__btn">Generate</button>
                       <a class="learn slider__learn" href="#">Learn more</a>
                     </div>
@@ -199,7 +235,7 @@
                       app to limit your liability for the outcome
                       of using your site or application. 
                     </p>
-                    <div>
+                    <div class="slider__btn-wrap">
                       <button class="btn slider__btn">Generate</button>
                       <a class="learn slider__learn" href="#">Learn more</a>
                     </div>
@@ -214,7 +250,7 @@
                       Inform customers and clients of your website
                       or mobile of your policies relating to returns and refunds.
                     </p>
-                    <div>
+                    <div class="slider__btn-wrap">
                       <button class="btn slider__btn">Generate</button>
                       <a class="learn slider__learn" href="#">Learn more</a>
                     </div>
@@ -234,33 +270,53 @@
   
       <section class="compare">
         <div class="compare__wrapper wrapper">
-          <div class="compare__cards compare__cards-44">
+          <div class="compare__cards compare__cards-44 tablet-hidden">
             <img src="img/Cards44.svg" alt="">
           </div>
-          <div class="compare__cards compare__cards-19-9">
+          <div class="compare__cards compare__cards-44 desktop-hidden">
+            <img src="img/Cards_tablet-44.svg" alt="">
+          </div>
+          <div class="compare__cards compare__cards-19-9 tablet-hidden">
             <img src="img/Cards19_9.svg" alt="">
           </div>
-          <div class="compare__cards compare__cards-49-29">
+          <div class="compare__cards compare__cards-49-29 tablet-hidden">
             <img src="img/Cards_49_29.svg" alt="">
           </div>
-          <div class="compare__cards compare__cards-29">
+          <div class="compare__cards compare__cards-29 tablet-hidden">
             <img src="img/Card_29.svg" alt="">
+          </div>
+          <div class="compare__cards compare__cards-9-29 desktop-hidden">
+            <img src="img/Cards-9-29.svg" alt="">
           </div>
           <div class="compare__marker">
             <img src="img/MARKER.svg" alt="">
           </div>
           <div class="compare__content-wrapper">
-            <p class="pretitle compare__pretitle">Validate Our Credibility</p>
-            <h2 class="title compare__title">Compare Industry<br>Competitors</h2>
-            <p class="subtitle compare__subtitle">
+            <p class="pretitle compare__pretitle tablet-hidden">Validate Our Credibility</p>
+            <p class="pretitle compare__pretitle desktop-hidden">make sure</p>
+            <h2 class="title compare__title tablet-hidden">Compare Industry<br>Competitors</h2>
+            <h2 class="title compare__title desktop-hidden">Compare with<br>competitors</h2>
+            <p class="subtitle compare__subtitle tablet-hidden">
               iTerms offers industry-leading solutions for businesses<br>
               for a fraction of the price, with no hidden fees.
             </p>
+            <p class="subtitle compare__subtitle desktop-hidden">
+              Create a free terms and conditions agreement
+              (aka terms of use or terms of service)
+              for your website or app
+            </p>
+            <div class="compare__track track desktop-hidden">
+              <p class="track__first">First month</p>
+              <img src="img/track_bar.svg" alt="">
+              <p class="track__following">Following months</p>
+            </div>
             <div class="compare__price">
               <p><span class="compare__dec">$</span><span class="compare__six">6</span><span class="compare__dec">95</span></p>
             </div>
-            <h5 class="price__title">Unlimited access</h5>
-            <p class="price__subtitle">for any documents</p>
+            <h5 class="price__title tablet-hidden">Unlimited access</h5>
+            <h5 class="price__title desktop-hidden">First month offer</h5>
+            <p class="price__subtitle tablet-hidden">for any documents</p>
+            <a class="learn compare__learn desktop-hidden" href="#">See pricing</a>
           </div>
 
     <!--------------------------------------------- COMPARE BENEFITS --------------------------------------------->
@@ -431,7 +487,7 @@
                     <blockquote class="review__quote">
                       <q><i>“I had been trying to write a Privacy Policy
                         and Terms and Conditions for my website for quite a
-                        while. I finally decided that I didn't have the skill
+                        while.I finally decided that I didn't have the skill
                         or legal knowledge to adequately prepare these documents
                         so I went into Google and found TermsFeed.”</i></q>
                     </blockquote>

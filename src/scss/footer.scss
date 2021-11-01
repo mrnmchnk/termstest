@@ -48,6 +48,8 @@
     width: 35%;
     margin: 0 auto;
     padding-bottom: 3.75rem;
+    display: flex;
+    justify-content: space-evenly;
   }
   // .ready__btn
 
@@ -57,7 +59,7 @@
   // .ready__learn
 
   &__learn {
-
+    align-self: center;
   }
 
 
