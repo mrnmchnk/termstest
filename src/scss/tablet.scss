@@ -331,20 +331,12 @@
     }
   }
 
-  // .secure__icon
-
-  &__icon {
-  }
 }
 
 // ---------------- FEEDBACK ---------------------
 
 .feedback {
 
-  // .feedback__wrapper
-
-  &__wrapper {
-  }
 
   // .feedback__back-text
 
@@ -358,21 +350,6 @@
   &__content-wrapper {
     padding-top: 5.6rem;
     margin-bottom: 10rem;
-  }
-
-  // .feedback__title-wrapper
-
-  &__title-wrapper {
-  }
-
-  // .feedback__pretitle
-
-  &__pretitle {
-  }
-
-  // .feedback__title
-
-  &__title {
   }
 
   // .feedback__subtitle
@@ -408,31 +385,6 @@
 
 .questions {
 
-  // .questions__wrapper
-
-  &__wrapper {
-  }
-
-  // .questions__title-wrapper
-
-  &__title-wrapper {
-  }
-
-  // .questions__pretitle
-
-  &__pretitle {
-  }
-
-  // .questions__title
-
-  &__title {
-  }
-
-  // .questions__subtitle
-
-  &__subtitle {
-  }
-
   // .questions__container
 
   &__container {
@@ -440,9 +392,9 @@
 
   }
 
-  // .questions__menu
+  &__title-wrapper {
+    text-align: left;
 
-  &__menu {
   }
 
   // .questions__list-wrapper
@@ -451,20 +403,6 @@
     padding: 0;
   }
 
-  // .questions__list
-
-  &__list {
-  }
-
-  // .questions__item
-
-  &__item {
-  }
-
-  // .questions__item-active
-
-  &__item-active {
-  }
 }
 
 .toc {
@@ -485,6 +423,36 @@
   }
 }
 
+.dropdown {
+
+  // .dropdown__learn
+
+  &__learn {
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0.9em;
+      right: -0.5em;
+      background-image: url(../img/downarrow.svg);
+      height: 1.5em;
+      width: 1.5em;
+    }
+  }
+}
+
+.dropbtn {
+}
+
+.dropdown-content {
+}
+
+
+
+
+
+
 .question {
 
   // .question__title
@@ -500,8 +468,46 @@
 
 
 
+// ---------------- READY ---------------------
 
+.ready {
+  // .ready__wrapper
 
+  &__wrapper {
+    width: 90%;
+
+  }
+
+  // .ready__title-wrapper
+
+  &__title-wrapper {
+  }
+
+  // .ready__title
+
+  &__title {
+  }
+
+  // .ready__subtitle
+
+  &__subtitle {
+  }
+
+  // .ready__btn-wrapper
+
+  &__btn-wrapper {
+  }
+
+  // .ready__btn
+
+  &__btn {
+  }
+
+  // .ready__learn
+
+  &__learn {
+  }
+}
 
 
 

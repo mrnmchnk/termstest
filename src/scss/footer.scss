@@ -1,6 +1,8 @@
+
+
+
+
 // ---------------- READY ---------------------
-
-
 
 .ready {
   color: #1D212A  ;
@@ -197,4 +199,58 @@ hr {
 
 .ready a {
   color: #1D212A;
+}
+
+
+
+
+
+@media (max-width: 769px) {
+
+  .desktop-hidden {
+    display: block;
+  }
+
+  .tablet-hidden {
+    display: none;
+  }
+
+
+  .footer {
+    background-image: url(../img/tablet_footer_backgroung.png);
+    background-repeat: no-repeat;
+    height: 741px;
+
+  }
+
+  .footer__wrapper {
+    width: 90%;
+
+    
+  }
+
+  .footer__legal {
+    width: 90%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.desktop-hidden {
+  display: none;
 }

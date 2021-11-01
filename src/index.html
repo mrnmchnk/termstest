@@ -14,6 +14,9 @@
 
       desktop-hidden -- спрятанные в десктопе
       tablet-hidden -- спрятанные в тэблет и мобилке
+
+       блоке ready стили перезаписываются (tablet-hidden)
+       высота футера
  -->
 
 <body>
@@ -617,7 +620,7 @@
           </p>
           <p class="subtitle questions__subtitle desktop-hidden">
             More than 140,000 businesses use iTerms.
-            Join our community of amazing companies!
+            Join our<br>community of amazing companies!
           </p>
         </div>
     
@@ -633,12 +636,12 @@
               <li class="toc__item">Contacts</li>
             </ul>
             <div class="dropdown desktop-hidden">
-              <button class="dropbtn learn">General</button>
+              <button class="dropbtn dropdown__learn">General</button>
               <div class="dropdown-content">
-              <a href="#">Trust & Safety</a>
-              <a href="#">Payment</a>
-              <a href="#">Help</a>
-              <a href="#">Contacts</a>
+                <a href="#">Trust & Safety</a>
+                <a href="#">Payment</a>
+                <a href="#">Help</a>
+                <a href="#">Contacts</a>
               </div>
             </div>
           </div>
