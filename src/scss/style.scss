@@ -687,23 +687,6 @@ img {
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // .compare__content-wrapper
 
   &__content-wrapper {
@@ -964,6 +947,7 @@ img {
   &__background {
     position: relative;
     background-color: #F9FAFC;
+    border-radius: 0.5em;
     box-shadow: 0 2rem 3rem 1rem #D8E0EC ;
     width: 51.5em;
     height: 18em;
@@ -973,8 +957,8 @@ img {
 
   &__list {
     position: relative;
-    top: -4.375em;
-    left: 0;
+    top: -8em;
+    left: 4em;
   }
 
   // .feedback__item
@@ -999,7 +983,7 @@ img {
 
   &__wrap {
     display: flex;
-
+    margin-bottom: 1rem;
   }
 
   // .review__photo

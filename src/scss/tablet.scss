@@ -29,20 +29,11 @@
   .intro {
     text-align: center;
 		margin-bottom: 40rem;
-    // .intro__wrapper
-
-		&__wrapper {
-		}
 
 		// .intro__title-wrapper
 
 		&__title-wrapper {
       width: 100%;
-		}
-
-		// .intro__pretitle
-
-		&__pretitle {
 		}
 
 		// .intro__title
@@ -54,31 +45,12 @@
       background-position: 0 2.5em;
       padding-bottom: 2rem;
     }
-
-		// .intro__subtitle
-
-		&__subtitle {
-		}
-
-		// .intro__btn
-
-		&__btn {
-		}
-
-		// .intro__learn
-
-		&__learn {
-		}
   }
 
 // ---------------- AI ---------------------
 
   .ai {
     background-image: none;
-		// .ai__wrapper
-
-		&__wrapper {
-		}
 
 		// .ai__content-wrapper
 
@@ -87,31 +59,11 @@
       margin: 0;
 		}
 
-		// .ai__title-wrapper
-
-		&__title-wrapper {
-		}
-
-		// .ai__pretitle
-
-		&__pretitle {
-		}
-
 		// .ai__title
 
 		&__title {
       margin-bottom: 3rem;
       width: 10em;
-		}
-
-		// .ai__subtitle
-
-		&__subtitle {
-		}
-
-		// .ai__advantages
-
-		&__advantages {
 		}
   }
 
@@ -122,21 +74,6 @@
 		&__list {
       padding-left: 4em;
 		}
-
-		// .advantages__item
-
-		&__item {
-		}
-
-		// .advantages__btn
-
-		&__btn {
-		}
-
-		// .advantages__learn
-
-		&__learn {
-		}
   }
 
 // ---------------- HOW ---------------------
@@ -145,10 +82,6 @@
     height: 100%;
     text-align: center;
     margin-bottom: 20em;
-		// .how__wrapper
-
-		&__wrapper {
-		}
 
 		// .how__title-wrapper
 
@@ -156,20 +89,6 @@
       margin: 0 auto 3.75em;
 		}
 
-		// .how__pretitle
-
-		&__pretitle {
-		}
-
-		// .how__title
-
-		&__title {
-		}
-
-		// .how__subtitle
-
-		&__subtitle {
-		}
 
 		// .how__steps-wrap
 
@@ -250,50 +169,17 @@
       }
 		}
 
-		// .how__steps
-
-		&__steps {
-		}
-
-		// .how__step
-
-		&__step {
-		}
 }
 
 // ---------------- EXPLORE ---------------------
 
 .explore {
 
-  // .explore__wrapper
-
-  &__wrapper {
-  }
-
+  
   // .explore__back-text
 
   &__back-text {
     top: -7rem;
-  }
-
-  // .explore__content-wrap
-
-  &__content-wrap {
-  }
-
-  // .explore__title-wrap
-
-  &__title-wrap {
-  }
-
-  // .explore__pretitle
-
-  &__pretitle {
-  }
-
-  // .explore__title
-
-  &__title {
   }
 
   // .explore__subtitle
@@ -303,15 +189,6 @@
     align-self: flex-end;
   }
 
-  // .explore__slider
-
-  &__slider {
-  }
-
-  // .explore__background
-
-  &__background {
-  }
 }
 
 // ---------------- COMPARE ---------------------
@@ -319,16 +196,7 @@
 .compare {
   margin-bottom: 23.3em;
 
-  // .compare__wrapper
-
-  &__wrapper {
-  }
-
-  // .compare__cards
-
-  &__cards {
-  }
-
+  
   // .compare__cards-44
 
   &__cards-44 {
@@ -336,31 +204,12 @@
     right: -31rem;
   }
 
-  // .compare__cards-19-9
-
-  &__cards-19-9 {
-  }
-
-  // .compare__cards-49-29
-
-  &__cards-49-29 {
-  }
-
-  // .compare__cards-29
-
-  &__cards-29 {
-  }
 
   // .compare__cards-9-29
 
   &__cards-9-29 {
     left: 0;
     bottom: 0;
-  }
-
-  // .compare__marker
-
-  &__marker {
   }
 
   // .compare__content-wrapper
@@ -371,15 +220,6 @@
     height: auto;
   }
 
-  // .compare__pretitle
-
-  &__pretitle {
-  }
-
-  // .compare__title
-
-  &__title {
-  }
 
   // .compare__subtitle
 
@@ -410,22 +250,12 @@
 
   }
 
-  // .compare__dec
-
-  &__dec {
-  }
-
-  // .compare__six
-
-  &__six {
-  }
 
   // .compare__benefits
 
   &__benefits {
     bottom: -27em;
-    width: 678px;
-    height: 376px;
+    width: 90%;
     margin: 0 auto; 
   }
 
@@ -438,7 +268,7 @@
   // .compare__item
 
   &__item {
-    margin: 1em;
+    margin: 2em 1em;
   }
 }
 .track {
@@ -455,18 +285,224 @@
     display: inline;
   }
 }
-.price {
 
-  // .price__title
+
+// ---------------- SECURE ---------------------
+
+.secure {
+  text-align: center;
+  background-image: url(../img/legal_portec_tablet.png);
+  background-repeat: no-repeat;
+  height: auto;
+
+  
+
+  // .secure__list
+
+  &__list {
+    padding-left: 0;
+    justify-content: space-around;
+    height: 15.5em;
+  }
+
+  // .secure__item
+
+  &__item {
+    margin-right: 0;
+
+    // .secure__item_policies
+
+    &_policies {
+      align-self: flex-start;
+    }
+
+    // .secure__item_business
+
+    &_business {
+      align-self: flex-start;
+
+    }
+
+    // .secure__item_pageviews
+
+    &_pageviews {
+      align-self: flex-start;
+
+    }
+  }
+
+  // .secure__icon
+
+  &__icon {
+  }
+}
+
+// ---------------- FEEDBACK ---------------------
+
+.feedback {
+
+  // .feedback__wrapper
+
+  &__wrapper {
+  }
+
+  // .feedback__back-text
+
+  &__back-text {
+    top: 0;
+    left: 1rem;
+  }
+
+  // .feedback__content-wrapper
+
+  &__content-wrapper {
+    padding-top: 5.6rem;
+    margin-bottom: 10rem;
+  }
+
+  // .feedback__title-wrapper
+
+  &__title-wrapper {
+  }
+
+  // .feedback__pretitle
+
+  &__pretitle {
+  }
+
+  // .feedback__title
 
   &__title {
   }
 
-  // .price__subtitle
+  // .feedback__subtitle
+
+  &__subtitle {
+    width: 15.8em;
+  }
+
+  &__background {
+    width: auto;
+  }
+}
+
+// ---------------- DISCOVER ---------------------
+
+.discover__wrapper {
+  margin-bottom: 10rem;
+
+  &__list {
+    justify-content: space-around;
+  }
+}
+
+.article {
+  margin: 0 0 3.75em 0;
+}
+
+.discover__list {
+  justify-content: space-around;
+}
+
+// ---------------- QUESTIONS ---------------------
+
+.questions {
+
+  // .questions__wrapper
+
+  &__wrapper {
+  }
+
+  // .questions__title-wrapper
+
+  &__title-wrapper {
+  }
+
+  // .questions__pretitle
+
+  &__pretitle {
+  }
+
+  // .questions__title
+
+  &__title {
+  }
+
+  // .questions__subtitle
 
   &__subtitle {
   }
+
+  // .questions__container
+
+  &__container {
+    display: block;
+
+  }
+
+  // .questions__menu
+
+  &__menu {
+  }
+
+  // .questions__list-wrapper
+
+  &__list-wrapper {
+    padding: 0;
+  }
+
+  // .questions__list
+
+  &__list {
+  }
+
+  // .questions__item
+
+  &__item {
+  }
+
+  // .questions__item-active
+
+  &__item-active {
+  }
 }
+
+.toc {
+
+  // .toc__title
+
+  &__title {
+  }
+
+  // .toc__list
+
+  &__list {
+  }
+
+  // .toc__item
+
+  &__item {
+  }
+}
+
+.question {
+
+  // .question__title
+
+  &__title {
+  }
+
+  // .question__answer
+
+  &__answer {
+  }
+}
+
+
+
+
+
+
 
 
 
