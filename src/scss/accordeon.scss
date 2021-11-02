@@ -32,3 +32,12 @@
 .active:after {
   content: "-"; 
 }
+
+@media (max-width: 361px) {
+
+  .panel {
+    padding: 0;
+  } 
+
+
+}

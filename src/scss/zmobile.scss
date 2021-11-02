@@ -418,6 +418,7 @@
 // ---------------- FEEDBACK ---------------------
 
 .feedback {
+  margin-bottom: 6em;
 
   // .feedback__wrapper
 
@@ -586,13 +587,369 @@
   }
 }
 
-// ---------------- FEEDBACK ---------------------
+// ---------------- DISCOVER ---------------------
+
+.discover {
+
+  // .discover__wrapper
+
+  &__wrapper {
+  }
+
+  // .discover__title-wrapper
+
+  &__title-wrapper {
+    text-align: left;
+    width: auto;
+  }
+
+  // .discover__pretitle
+
+  &__pretitle {
+  }
+
+  // .discover__title
+
+  &__title {
+  }
+
+  // .discover__subtitle
+
+  &__subtitle {
+  }
+
+  // .discover__list
+
+  &__list {
+    margin-bottom: 2em;
+  }
+
+  // .discover__item
+
+  &__item {
+  }
+
+  // .discover__learn
+
+  &__learn {
+    margin-left: 0;
+  }
+
+  // .discover__btn-wrap
+
+  &__btn-wrap {
+  }
+}
+
+.article {
+  width: auto;
+  height: auto;
+  margin-bottom: 2em;
+
+  // .article__image
+
+  &__image {
+    width: auto;
+  }
+
+  // .article__title
+
+  &__title {
+    font-size: 1.125em;
+  }
+
+  // .article__subtitle
+
+  &__subtitle {
+  }
+}
+
+// ---------------- QUESTIONS ---------------------
+
+.questions {
+
+  // .questions__wrapper
+
+  &__wrapper {
+  }
+
+  // .questions__title-wrapper
+
+  &__title-wrapper {
+    width: auto;
+  }
+
+  // .questions__pretitle
+
+  &__pretitle {
+  }
+
+  // .questions__title
+
+  &__title {
+  }
+
+  // .questions__subtitle
+
+  &__subtitle {
+    width: auto;
+
+  }
+
+  // .questions__container
+
+  &__container {
+  }
+
+  // .questions__menu
+
+  &__menu {
+  }
+
+  // .questions__list-wrapper
+
+  &__list-wrapper {
+  }
+
+  // .questions__list
+
+  &__list {
+  }
+
+  // .questions__item
+
+  &__item {
+  }
+
+  // .questions__item-active
+
+  &__item-active {
+  }
+}
+
+.toc {
+
+  // .toc__title
+
+  &__title {
+    font-size: 1.125em;
+    margin-bottom: 0;
+  }
+
+  // .toc__list
+
+  &__list {
+  }
+
+  // .toc__item
+
+  &__item {
+  }
+}
+.activated {
+}
+.dropdown {
+
+  // .dropdown__learn
+
+  &__learn {
+  }
+}
+.question {
+
+  // .question__title
+
+  &__title {
+    font-size: 1.125em;
+  }
+
+  // .question__answer
+
+  &__answer {
+  }
+}
+
+// ---------------- READY ---------------------
+
+
+.ready {
+
+  // .ready__wrapper
+
+  &__wrapper {
+  }
+
+  // .ready__title-wrapper
+
+  &__title-wrapper {
+    width: auto;
+    padding-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  // .ready__title
+
+  &__title {
+  }
+
+  // .ready__subtitle
+
+  &__subtitle {
+  }
+
+  // .ready__btn-wrapper
+
+  &__btn-wrapper {
+    width: auto;
+    margin: 0 auto;
+
+  }
+
+  // .ready__btn-tablet
+
+  &__btn-tablet {
+    display: flex;
+    align-content: center;
+    padding-bottom: 2em;
+  }
+
+  // .ready__btn
+
+  &__btn {
+    padding: .75em 1em;
+  }
+
+  // .ready__learn
+
+  &__learn {
+    margin-left: 0;
+  }
+}
+
+
+.footer {
+  height: 800px;
+  // background-image: url(../img/mobile_Footer_background.svg),
+  //                   url(../img/mobile_Cards_background.svg);
+  // background-repeat: no-repeat, no-repeat;
+  // background-position: 0 0, bottom;
+  background-image: url(../img/legal_mobile.png);
 
 
 
 
 
+  // .footer__wrapper
 
+  &__wrapper {
+    bottom: 5em;
+  }
+
+  // .footer__content-wrapper
+
+  &__content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  // .footer__title-wrapper
+
+  &__title-wrapper {
+  }
+
+  // .footer__title
+
+  &__title {
+    font-size: 1.125rem;
+    margin-bottom: 1em;
+  }
+
+  // .footer__subtitle
+
+  &__subtitle {
+  }
+
+  // .footer__list-wrapper
+
+  &__list-wrapper {
+  }
+
+  // .footer__legal
+
+  &__legal {
+  }
+
+  // .footer__legal-wrapper
+
+  &__legal-wrapper {
+    margin: 0.5em;
+  }
+}
+.title {
+}
+.subtitle {
+}
+.tablet-hidden {
+}
+.legal {
+
+  // .legal__list
+
+  &__list {
+  }
+
+  // .legal__item
+
+  &__item {
+    margin-bottom: 0.5em;
+
+    & a {
+      color: #E7E9ED;
+
+    }
+  }
+
+  // .legal__item-language
+
+  &__item-language {
+
+    &::after {
+      right: 1em;
+    }
+  }
+}
+.desktop-hidden {
+}
+.info {
+
+  // .info__title
+
+  &__title {
+    line-height: 1;
+    font-size: 1.125em;
+    margin-bottom: 1em;
+  }
+
+  // .info__list
+
+  &__list {
+  }
+
+  // .info__item
+
+  &__item {
+
+
+    & a {
+      color: #E7E9ED;
+
+    }
+  }
+}
+.copyright {
+}
 
 
 }
