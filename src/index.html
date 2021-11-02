@@ -24,6 +24,8 @@
       сделать фон в ввиде круга в компейре на тэблете
       починить фидбек слайдер
 
+      кнопки на слайдерах баттонами с бэкграундом, имг же не пойдет?
+
  -->
 
 <body>
@@ -33,7 +35,7 @@
   <!--------------------------------------------- MAIN --------------------------------------------->
 
       <section class="intro">
-        <img class="desktop-hidden" src="img/tablet_intro_image.svg" alt="">
+        <img class="intro__image desktop-hidden" src="img/tablet_intro_image.svg" alt="">
         <div class="intro__wrapper wrapper">
           <div class="intro__title-wrapper">
             <p class="pretitle intro__pretitle tablet-hidden">Powered By AI</p>
@@ -184,9 +186,14 @@
                   <div class="slider__wrap">
                     <img class="slider__icon" src="img/PrivacyPolicy.svg" alt="">
                     <h5 class="slider__title">Privacy Policy</h5>
-                    <p class="slider__subtitle">
+                    <p class="slider__subtitle tablet-hidden">
                       Legal document disclosing partial or all ways an entity gathers,
                       uses, discloses, and manages client personal data.
+                    </p>
+                    <p class="slider__subtitle desktop-hidden">
+                      Statement or legal document that discloses some
+                      or all of the ways a party gathers, discloses a
+                      customer or client's data.
                     </p>
                     <div class="slider__btn-wrap">
                       <button class="btn slider__btn">Generate</button>
@@ -200,9 +207,13 @@
                   <div class="slider__wrap">
                     <img class="slider__icon" src="img/Terms&Conditions.svg" alt="">
                     <h5 class="slider__title">Terms &<br>Conditions</h5>
-                    <p class="slider__subtitle">
+                    <p class="slider__subtitle tablet-hidden">
                       Legal agreements between a service provider and
                       an individual who wishes to use their service.
+                    </p>
+                    <p class="slider__subtitle desktop-hidden">
+                      Are the legal agreements between a service
+                      provider and a person who wants to use that service.
                     </p>
                     <div class="slider__btn-wrap">
                       <button class="btn slider__btn">Generate</button>
@@ -272,9 +283,9 @@
                   </div>
                 </li>
               </ul>
-              <div class="slider__chevrons">
-                <img class="slider__chevron swiper-button-prev" src="img/chevron_left.svg" alt="">
-                <img class="slider__chevron swiper-button-next" src="img/chevron_right.svg" alt="">
+              <div class="slider__chevrons explore__chevrons">
+                <img class="slider__chevron-left" src="img/chevron_left.svg" alt="">
+                <img class="slider__chevron-right" src="img/chevron_right.svg" alt="">
               </div>
             </div>
           </div>
@@ -541,9 +552,9 @@
               </li>
 
             </ul>
-            <div class="slider__chevrons">
-              <img class="slider__chevron swiper-button-prev" src="img/chevron_left.svg" alt="">
-              <img class="slider__chevron swiper-button-next" src="img/chevron_right.svg" alt="">
+            <div class="slider__chevrons feedback__chevrons">
+              <img class="slider__chevron-left " src="img/chevron_left.svg" alt="">
+              <img class="slider__chevron-right " src="img/chevron_right.svg" alt="">
             </div>
           </div>
         </div>
@@ -830,8 +841,8 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
       navigation: {
-        nextEl: ".chevron__right",
-        prevEl: ".chevron__left",
+        nextEl: ".slider__chevron-right",
+        prevEl: ".slider__chevron-left",
       },
     });
   </script>

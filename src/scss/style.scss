@@ -494,6 +494,15 @@ img {
     width: 51.5em;
     height: 28.6em;
   }
+
+  // .explore__chevrons
+
+  &__chevrons {
+    right: 2em;
+    bottom: 2em;
+  }
+
+
 }
 
 // ---------------- EXPLORE SLIDER ---------------------
@@ -600,36 +609,38 @@ img {
   // .slider__learn
 
   &__learn {
-    // display: block;
+    margin-left: 0;
   }
+
+  // .slider__chevrons
 
   &__chevrons {
     display: flex;
     justify-content: end;
     position: relative;
-    right: 0;
-    bottom: 0;
+    right: 2em;
+    bottom: 2em;
     padding: 0 3em 2.4em 0;
   }
+
+  // .slider__chevron
 
   &__chevron {
     margin: 0 2em 0 2em;
     width: 1.5em;
     height: 1.5em;
   }
-}
 
-.chevron {
+  // .chevron__chevron-left
 
-  // .chevron__left
-
-  &__left {
+  &__chevron-left {
     cursor: pointer;
+    margin-right: 1em;
   }
 
-  // .chevron__right
+  // .chevron__chevron-right
 
-  &__right {
+  &__chevron-right {
     cursor: pointer;
   }
 }
@@ -977,6 +988,13 @@ img {
 
   &__title {
   }
+
+  // .feedback__title
+
+  &__chevrons {
+    bottom: 6em;
+  }
+
 }
 .review {
 
