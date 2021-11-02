@@ -1,6 +1,6 @@
 @import 'base/*.scss';
 @import 'global/*.scss';
-@import '**/_*.scss';
+// @import '**/_*.scss';
 @import '../components/**/*.scss';
 
 html {
@@ -163,9 +163,9 @@ img {
 
 .bar {
   width: 1.225em;
-  height: 0.1875em;
+  height: 2px;
   background-color: #1D212A;
-  margin: 6px 0;
+  margin: 3px 0;
 }
 
 
@@ -1278,6 +1278,8 @@ img {
 
 
 @import '../scss/footer.scss';
+@import '../scss/tablet.scss';
+@import '../scss/zmobile.scss';
 
 
 

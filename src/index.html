@@ -9,14 +9,21 @@
 
 <!--  TODO
 
-      ПОЧИНИТЬ СЛАЙДЕРЫ
+      починить кнопки у слайдеров и сами слайдеры
       белая линия в секьюр
+      сделать выпадающие менюшки для кнопок языков
 
       desktop-hidden -- спрятанные в десктопе
       tablet-hidden -- спрятанные в тэблет и мобилке
 
-       блоке ready стили перезаписываются (tablet-hidden)
-       высота футера
+      блоке ready стили перезаписываются (tablet-hidden)
+      высота футера
+
+      почему горизонтальный скролл?
+      маркеры списка неровные
+      сделать фон в ввиде круга в компейре на тэблете
+      починить фидбек слайдер
+
  -->
 
 <body>
@@ -41,8 +48,9 @@
               <b>Terms of Use</b> or <b>Cookie Policy</b> for <span class="free">free</span>
             </p>
           </div>
-          <div>
-            <button class="btn intro__btn">Generate for free</button>
+          <div class="intro__btn-wrap">
+            <button class="btn intro__btn tablet-hidden">Generate for free</button>
+            <button class="btn intro__btn desktop-hidden">Generate</button>
             <a class="learn intro__learn" href="#">Learn more</a>
           </div>
         </div>
@@ -51,6 +59,7 @@
     <!--------------------------------------------- AI --------------------------------------------->
   
       <section class="ai">
+        <img class="desktop-hidden" src="img/screens.svg" alt="">
         <p class="back-text">AI</p>
         <div class="ai__wrapper wrapper">
           <div class="ai__content-wrapper">
@@ -126,9 +135,12 @@
                 <p class="how__number how__number-three">3</p>
               </div>
               <div class="how__steps">
-                <p class="how__step">Choose Your<br>Desired Policy </p>
-                <p class="how__step how__step-two">Collaborate<br>withour<br>AI Assistant</p>
-                <p class="how__step">Collect Your<br>Legal Document</p>
+                <p class="how__step tablet-hidden">Choose Your<br>Desired Policy </p>
+                <p class="how__step desktop-hidden">Choose<br>your policy </p>
+                <p class="how__step how__step-two tablet-hidden">Collaborate<br>withour<br>AI Assistant</p>
+                <p class="how__step how__step-two desktop-hidden">Chat with AI<br>Assistant</p>
+                <p class="how__step tablet-hidden">Collect Your<br>Legal Document</p>
+                <p class="how__step desktop-hidden">Get your<br>document</p>
               </div>
             </div>
             <div class="how__vid">
@@ -149,7 +161,7 @@
               <p class="pretitle explore__pretitle tablet-hidden">Intuitively Made For Your Business</p>
               <p class="pretitle explore__pretitle desktop-hidden">for your business</p>
               <h2 class="title explore__title tablet-hidden">Explore iTerms<br>Solutions</h2>
-              <h2 class="title explore__title desktop-hidden">Explore of our<br>Solutions</h2>
+              <h2 class="title explore__title desktop-hidden">Explore of our Solutions</h2>
             </div>
             <p class="subtitle explore__subtitle tablet-hidden">
               Regardless of your requirements,<br>
@@ -308,18 +320,22 @@
               (aka terms of use or terms of service)
               for your website or app
             </p>
-            <div class="compare__track track desktop-hidden">
+            <div class="compare__track track desktop-hidden mobile-hidden">
               <p class="track__first">First month</p>
               <img src="img/track_bar.svg" alt="">
               <p class="track__following">Following months</p>
             </div>
             <div class="compare__price">
-              <p><span class="compare__dec">$</span><span class="compare__six">6</span><span class="compare__dec">95</span></p>
+              <p>
+                <span class="compare__dec">$</span>
+                <span class="compare__six">6</span>
+                <span class="compare__dec">95</span>
+              </p>
             </div>
-            <h5 class="price__title tablet-hidden">Unlimited access</h5>
-            <h5 class="price__title desktop-hidden">First month offer</h5>
-            <p class="price__subtitle tablet-hidden">for any documents</p>
-            <a class="learn compare__learn desktop-hidden" href="#">See pricing</a>
+            <h5 class="price__title tablet-hidden mobile-revealed">Unlimited access</h5>
+            <h5 class="price__title desktop-hidden mobile-hidden">First month offer</h5>
+            <p class="price__subtitle tablet-hidden mobile-revealed">for any documents</p>
+            <a class="learn compare__learn desktop-hidden mobile-hidden" href="#">See pricing</a>
           </div>
 
     <!--------------------------------------------- COMPARE BENEFITS --------------------------------------------->
@@ -470,7 +486,8 @@
                     <img class="review__photo" src="img/Rose.png" alt="">
                     <div class="review__person">
                       <h5 class="review__name">Rose V.</h5>
-                      <p class="review__subttile">Generated an EULA agreement</p>
+                      <p class="review__subttile tablet-hidden">Generated an EULA agreement</p>
+                      <p class="review__subttile desktop-hidden ">Generated an EULA agre</p>
                     </div>
                   </div>
                   <div class="review__card">
@@ -533,7 +550,8 @@
         <div class="trustpilot">
           <p class="trustpilot__text">Excellent</p>
           <img class="trustpilot__stars" src="img/Trustpilot_stras.svg" alt="">
-          <p class="trustpilot__text">7,000 reviews on</p>
+          <p class="trustpilot__text">7,000 reviews</p>
+          <p class="trustpilot__text">on</p>
           <img class="trustpilot__logo" src="img/Trustpilot_logo.svg" alt="">
         </div>
       </div>

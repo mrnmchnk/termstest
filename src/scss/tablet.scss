@@ -1,4 +1,14 @@
+// (min-width: 361px) and
+
 @media (max-width: 769px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
 
   .header {
     width: 100%;
@@ -19,7 +29,7 @@
 
   .back-text {
     position: absolute;
-    top: -10rem;
+    top: 28rem;
     left: 2rem;
     margin: 0;
   }
@@ -28,7 +38,7 @@
 
   .intro {
     text-align: center;
-		margin-bottom: 40rem;
+		margin-bottom: 35rem;
 
 		// .intro__title-wrapper
 
@@ -81,7 +91,7 @@
   .how {
     height: 100%;
     text-align: center;
-    margin-bottom: 20em;
+    margin-bottom: 30em;
 
 		// .how__title-wrapper
 
@@ -102,6 +112,8 @@
 		// .how__vid
 
 		&__vid {
+      width: 550px;
+      height: 403px;
 
       &::before {
         display: none;
@@ -174,6 +186,7 @@
 // ---------------- EXPLORE ---------------------
 
 .explore {
+  overflow-x: hidden;
 
   
   // .explore__back-text
@@ -194,13 +207,21 @@
 // ---------------- COMPARE ---------------------
 
 .compare {
+
   margin-bottom: 23.3em;
 
+
+  // .compare__marker
+
+  &__marker {
+    right: -11em;
+    bottom: -32em;
+  }
   
   // .compare__cards-44
 
   &__cards-44 {
-    top: -10rem;
+    top: -8rem;
     right: -31rem;
   }
 
@@ -209,7 +230,7 @@
 
   &__cards-9-29 {
     left: 0;
-    bottom: 0;
+    bottom: -15em;
   }
 
   // .compare__content-wrapper
@@ -336,6 +357,8 @@
 // ---------------- FEEDBACK ---------------------
 
 .feedback {
+  overflow-x: hidden;
+
 
 
   // .feedback__back-text

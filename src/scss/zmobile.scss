@@ -1,0 +1,598 @@
+@media (max-width: 361px) {
+
+  body {
+    // background-color: red;
+  }
+
+  .pretitle {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  .wrapper {
+    padding: 0 0.94rem;
+  }
+  
+  .back-text {
+    font-size: 8rem;
+    top: 14rem;
+    left: 0.5rem;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .mobile-revealed {
+    display: block;
+  }
+  
+// ---------------- INTRO ---------------------
+
+  .intro {
+    text-align: center;
+		margin-bottom: 25rem;
+
+
+     // .intro__pretitle
+  
+     &__pretitle {
+       font-size: 0.875em;
+    }
+
+		// .intro__title-wrapper
+
+		&__title-wrapper {
+      width: 100%;
+		}
+
+		// .intro__title
+
+		&__title {
+      font-size: 2rem;
+      background-image: url(../img/titleMarker.svg);
+      background-repeat: no-repeat;
+      background-position: 0 2.5em;
+      background-size: 100%;
+
+
+
+      padding-bottom: 2rem;
+    
+  }
+
+  &__btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// ---------------- AI ---------------------
+
+.ai {
+
+  // .ai__wrapper
+
+  &__wrapper {
+  }
+
+  // .ai__content-wrapper
+
+  &__content-wrapper {
+  }
+
+  // .ai__title-wrapper
+
+  &__title-wrapper {
+    margin-bottom: 1em;
+  }
+
+  // .ai__pretitle
+
+  &__pretitle {
+    margin-bottom: 0;
+  }
+
+  // .ai__title
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  // .ai__subtitle
+
+  &__subtitle {
+  }
+
+  // .ai__advantages
+
+  &__advantages {
+  }
+}
+
+// ---------------- HOW ---------------------
+
+.how {
+  margin-bottom: 15em;
+  // .how__wrapper
+
+  &__wrapper {
+  }
+
+  // .how__title-wrapper
+
+  &__title-wrapper {
+    width: auto;
+    margin-bottom: 2.75rem;
+  }
+
+  // .how__pretitle
+
+  &__pretitle {
+  }
+
+  // .how__title
+
+  &__title {
+  }
+
+  // .how__subtitle
+
+  &__subtitle {
+  }
+
+  // .how__steps-wrap
+
+  &__steps-wrap {
+  }
+
+  // .how__numbers-wrap
+
+  &__numbers-wrap {
+    width: 100%;
+  }
+
+  // .how__numbers
+
+  &__numbers {
+    justify-content: space-between;
+  }
+
+  // .how__number
+
+  &__number {
+  }
+
+  // .how__number-one
+
+  &__number-one {
+    &::after {
+      width: 131%;
+    }
+  }
+
+  // .how__number-two
+
+  &__number-two {
+    &::after {
+      width: 131%;
+    }
+  }
+
+  // .how__number-three
+
+  &__number-three {
+  }
+
+  // .how__steps
+
+  &__steps {
+    font-size: 1rem;
+  }
+
+  // .how__step
+
+  &__step {
+  }
+
+  // .how__step-two
+
+  &__step-two {
+  }
+
+  // .how__vid
+
+  &__vid {
+    height: 240px;
+  }
+}
+
+// ---------------- EXPLORE ---------------------
+
+.explore {
+
+  // .explore__wrapper
+
+  &__wrapper {
+  }
+
+  // .explore__back-text
+
+  &__back-text {
+  }
+
+  // .explore__content-wrap
+
+  &__content-wrap {
+    display: block;
+  }
+
+  // .explore__title-wrap
+
+  &__title-wrap {
+  }
+
+  // .explore__pretitle
+
+  &__pretitle {
+  }
+
+  // .explore__title
+
+  &__title {
+  }
+
+  // .explore__subtitle
+
+  &__subtitle {
+    width: auto;
+  }
+
+  // .explore__slider
+
+  &__slider {
+  }
+
+  // .explore__background
+
+  &__background {
+    width: 100%;
+  }
+}
+
+// ---------------- COMPARE ---------------------
+
+
+.compare {
+  margin-top: -7em;
+  margin-bottom: 44em;
+
+  // .compare__wrapper
+
+  &__wrapper {
+  }
+
+  // .compare__cards
+
+  &__cards {
+  }
+
+  // .compare__cards-44
+
+  &__cards-44 {
+    width: 220px;
+    top: 0;
+    left: 13rem;
+  }
+
+  // .compare__cards-9-29
+
+  &__cards-9-29 {
+    width: 260px;
+    left: -3em;
+    bottom: -13em;
+  }
+
+  // .compare__marker
+
+  &__marker {
+    width: 200px;
+    right: -4.6rem;
+    bottom: -8rem;
+  }
+
+
+  // .compare__price
+
+  &__price {
+    background-size: 50%;
+    background-position: 58% 40%;
+  }
+
+  // .compare__dec
+
+  &__dec {
+    top: -1em;
+  }
+
+  // .compare__six
+
+  &__six {
+    font-size: 2rem;
+  }
+
+  // .compare__learn
+
+  &__learn {
+  }
+
+  // .compare__benefits
+
+  &__benefits {
+    bottom: -47em;
+  }
+
+  // .compare__list
+
+  &__list {
+  }
+
+  // .compare__item
+
+  &__item {
+  }
+}
+
+.track {
+
+  // .track__first
+
+  &__first {
+  }
+
+  // .track__following
+
+  &__following {
+  }
+}
+.price {
+
+  // .price__title
+
+  &__title {
+    font-size: 1rem;
+  }
+
+  // .price__subtitle
+
+  &__subtitle {
+    font-size: 0.875rem;
+  }
+}
+
+// ---------------- SECURE ---------------------
+
+.secure {
+  background-image: url(../img/legal_mobile.png);
+  background-repeat: no-repeat;
+  height: 808px;
+
+  // .secure__wrapper
+
+  &__wrapper {
+  }
+
+  // .secure__title-wrapper
+
+  &__title-wrapper {
+    padding-top: 6em;
+  }
+
+
+  // .secure__list
+
+  &__list {
+    display: block;
+  }
+
+  // .secure__item
+
+  &__item {
+    margin-bottom: 2rem;
+
+  }
+
+  // .secure__icon
+
+  &__icon {
+  }
+}
+
+// ---------------- FEEDBACK ---------------------
+
+.feedback {
+
+  // .feedback__wrapper
+
+  &__wrapper {
+  }
+
+  // .feedback__back-text
+
+  &__back-text {
+    top: 0;
+  }
+
+  // .feedback__content-wrapper
+
+  &__content-wrapper {
+    padding-top: 3rem;
+    display: block;
+  }
+
+  // .feedback__title-wrapper
+
+  &__title-wrapper {
+  }
+
+  // .feedback__pretitle
+
+  &__pretitle {
+  }
+
+  // .feedback__title
+
+  &__title {
+  }
+
+  // .feedback__subtitle
+
+  &__subtitle {
+    width: auto;
+  }
+
+  // .feedback__slider
+
+  &__slider {
+  }
+
+  // .feedback__background
+
+  &__background {
+    height: 455px;
+  }
+
+  // .feedback__list
+
+  &__list {
+    top: -5em;
+    left: 1em;
+  }
+
+  // .feedback__item
+
+  &__item {
+  }
+
+  // .feedback__item-wrap
+
+  &__item-wrap {
+    width: 255px;
+  }
+}
+
+.review {
+
+  // .review__wrap
+
+  &__wrap {
+    align-items: center;
+    margin-bottom: 0.5em;
+    width: 300px;
+  }
+
+  // .review__photo
+
+  &__photo {
+    width: 48px;
+    height: 48px;
+  }
+
+  // .review__person
+
+  &__person {
+  }
+
+  // .review__name
+
+  &__name {
+    font-size: 1.125em;
+  }
+
+  // .review__subttile
+
+  &__subttile {
+  }
+
+  // .review__card
+
+  &__card {
+    width: 290px;
+    height: 386px;
+    padding: 2em 1.5em;
+  }
+
+  // .review__quote
+
+  &__quote {
+  }
+
+  // .review__rating-wrap
+
+  &__rating-wrap {
+  }
+
+  // .review__rating
+
+  &__rating {
+  }
+
+  // .review__star
+
+  &__star {
+  }
+}
+.slider {
+
+  // .slider__chevrons
+
+  &__chevrons {
+  }
+
+  // .slider__chevron
+
+  &__chevron {
+  }
+}
+.trustpilot {
+  flex-wrap: wrap;
+
+  & p, img {
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  // .trustpilot__text
+
+  &__text {
+  }
+
+  // .trustpilot__stars
+
+  &__stars {
+    width: 124px;
+  }
+
+  // .trustpilot__logo
+
+  &__logo {
+  }
+}
+
+// ---------------- FEEDBACK ---------------------
+
+
+
+
+
+
+
+
+}

@@ -215,6 +215,13 @@ hr {
     display: none;
   }
 
+  .ready {
+
+    &__btn-wrapper {
+      display: flex;
+    }
+  }
+
 
   .footer {
     background-image: url(../img/tablet_footer_backgroung.png);
