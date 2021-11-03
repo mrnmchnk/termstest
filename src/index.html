@@ -26,9 +26,11 @@
 
       кнопки на слайдерах баттонами с бэкграундом, имг же не пойдет?
 
-      на хроме ломается все к чертям
-
       переделать все в проценты -_-
+
+      менюшки языка
+      маленькие иконки в свг
+      разбить стили на блоки и ипортировать в стайл.сксс
 
  -->
 
@@ -301,22 +303,22 @@
       <section class="compare">
         <div class="compare__wrapper wrapper">
           <div class="compare__cards compare__cards-44 tablet-hidden">
-            <img src="img/Cards44.svg" alt="">
+            <img src="img/Cards_44.png" alt="">
           </div>
           <div class="compare__cards compare__cards-44 desktop-hidden">
-            <img src="img/Cards_tablet-44.svg" alt="">
+            <img src="img/Cards_tablet_44.png" alt="">
           </div>
           <div class="compare__cards compare__cards-19-9 tablet-hidden">
-            <img src="img/Cards19_9.svg" alt="">
+            <img src="img/Cards_19_9.png" alt="">
           </div>
           <div class="compare__cards compare__cards-49-29 tablet-hidden">
-            <img src="img/Cards_49_29.svg" alt="">
+            <img src="img/Cards_49_29.png" alt="">
           </div>
           <div class="compare__cards compare__cards-29 tablet-hidden">
-            <img src="img/Card_29.svg" alt="">
+            <img src="img/Cards_29.png" alt="">
           </div>
           <div class="compare__cards compare__cards-9-29 desktop-hidden">
-            <img src="img/Cards-9-29.svg" alt="">
+            <img src="img/Cards_tablet_9_29.png" alt="">
           </div>
           <div class="compare__marker">
             <img src="img/MARKER.svg" alt="">
@@ -564,7 +566,13 @@
         </div>
         <div class="trustpilot">
           <p class="trustpilot__text">Excellent</p>
-          <img class="trustpilot__stars" src="img/Trustpilot_stras.svg" alt="">
+          <div class="trustpilot__stars">
+            <div class="trustpilot__star"><img class="trustpilot__star-image" src="img/Trustpilot_Star.svg" alt=""></div>
+            <div class="trustpilot__star"><img class="trustpilot__star-image" src="img/Trustpilot_Star.svg" alt=""></div>
+            <div class="trustpilot__star"><img class="trustpilot__star-image" src="img/Trustpilot_Star.svg" alt=""></div>
+            <div class="trustpilot__star"><img class="trustpilot__star-image" src="img/Trustpilot_Star.svg" alt=""></div>
+            <div class="trustpilot__star trustpilot__star_half"><img class="trustpilot__star-image" src="img/Trustpilot_Star.svg" alt=""></div>
+          </div>
           <p class="trustpilot__text">7,000 reviews</p>
           <p class="trustpilot__text">on</p>
           <img class="trustpilot__logo" src="img/Trustpilot_logo.svg" alt="">
@@ -669,8 +677,8 @@
               <li class="toc__item">Contacts</li>
             </ul>
             <div class="dropdown desktop-hidden">
-              <button class="dropbtn dropdown__learn">General</button>
-              <div class="dropdown-content">
+              <button onclick="showHide()" class="dropbtn dropdown__learn">General</button>
+              <div id="myDropdown" class="dropdown-content">
                 <a href="#">Trust & Safety</a>
                 <a href="#">Payment</a>
                 <a href="#">Help</a>
@@ -850,7 +858,7 @@
       },
     });
   </script>
-  <script>
+  <!-- <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -867,8 +875,46 @@
     } else {
       panel.style.display = "block";
     }
-  });
-} 
+     });
+    } 
+  </script> -->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function showHide() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
   </script>
 </body>
 

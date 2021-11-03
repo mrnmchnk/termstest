@@ -791,7 +791,7 @@ img {
 // ---------------- SECURE ---------------------
 
 .secure {
-  background-image: url(../img/Legal_Protection_You.svg);
+  background-image: url(../img/secure_background.jpg);
   color: #FFFFFF;
   height: 779px;
   
@@ -1070,18 +1070,49 @@ img {
   justify-content: center;
 
   & p, img {
-    margin-right: 1rem;
 
   }
 
   // .trustpilot__text
 
   &__text {
+    margin-right: 1rem;
+
   }
 
   // .trustpilot__stars
 
   &__stars {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 1rem;
+
+  }
+
+  // .trustpilot__star
+
+  &__star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #00B67A;
+    margin-right: 2px;
+  }
+
+  // .trustpilot__star-image
+
+  &__star-image {
+    width: 16.8px;
+    height: 15.9px;
+  }
+
+  // .trustpilot__star_half
+
+  &__star_half {
+    background: linear-gradient( to right, #00B67A 50%, #DCDCE6 50%) no-repeat;
+    // background-position: -50%;
   }
 
   // .trustpilot__logo
