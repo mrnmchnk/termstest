@@ -83,7 +83,18 @@
           <li class="legal__item"><a href="#">Terms & Conditions</a></li>
           <li class="legal__item"><a href="#">Privacy Policy</a></li>
           <li class="legal__item"><a href="#">Disclaimer</a></li>
-          <li class="legal__item legal__item-language">English version</li>
+          <li class="legal__item legal__item-language">
+            <div class="dropdown tablet-hidden">
+              <button onclick="botShowHide()" class="dropbtn legal__language">
+                English version
+                <img class="header__arrow" src="../../img/down_arrow_white.svg" alt="">
+              </button>
+              <div id="botDropdown" class="dropdown-content bot-dropdown-content">
+                <a href="#">English</a>
+                <a href="#">Russian</a>
+              </div>
+            </div>  
+          </li>
         </ul>
       </div>
     </div>

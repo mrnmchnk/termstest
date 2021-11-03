@@ -32,6 +32,8 @@
       маленькие иконки в свг
       разбить стили на блоки и ипортировать в стайл.сксс
 
+      как сделать непрозрачный фон у меню
+
  -->
 
 <body>
@@ -677,8 +679,8 @@
               <li class="toc__item">Contacts</li>
             </ul>
             <div class="dropdown desktop-hidden">
-              <button onclick="showHide()" class="dropbtn dropdown__learn">General</button>
-              <div id="myDropdown" class="dropdown-content">
+              <button onclick="tocShowHide()" class="dropbtn">General</button>
+              <div id="tocDropdown" class="dropdown-content">
                 <a href="#">Trust & Safety</a>
                 <a href="#">Payment</a>
                 <a href="#">Help</a>
@@ -845,7 +847,6 @@
       </div>
     </section>
   
-    
   </main>
 	@@include('components/page-blocks/_footer.html')
 	@@include('components/page-blocks/_scripts.html')
@@ -858,26 +859,7 @@
       },
     });
   </script>
-  <!-- <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-     });
-    } 
-  </script> -->
+ 
   <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -894,11 +876,18 @@
       });
     }
   </script>
+
   <script>
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
     function showHide() {
         document.getElementById("myDropdown").classList.toggle("show");
+    }
+    function tocShowHide() {
+        document.getElementById("tocDropdown").classList.toggle("show");
+    }
+    function botShowHide() {
+        document.getElementById("botDropdown").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -916,15 +905,17 @@
       }
     }
   </script>
+  
   <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "360px";
-      document.body.style.backgroundColor = "#F1F3F6";
+      // document.body.style.backgroundColor = "#F1F3F6";
+      // document.body.style.backgroundColor = "#000000";
     }
 
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
-      document.body.style.backgroundColor = "white";
+      // document.body.style.backgroundColor = "white";
     } 
   </script>
 </body>

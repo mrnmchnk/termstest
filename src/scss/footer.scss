@@ -174,21 +174,30 @@
    
   }
 
+  // .legal__item-language
+
   &__item-language {
     position: relative;
 
-      &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0.125em;
-      right: -2em;
-      background-image: url(../img/down_arrow_white.svg);
-      height: 1.5em;
-      width: 1.5em;
-      }
+      // &::after {
+      // content: "";
+      // display: block;
+      // position: absolute;
+      // top: 0.125em;
+      // right: -2em;
+      // // background-image: url(../img/down_arrow_white.svg);
+      // height: 1.5em;
+      // width: 1.5em;
+      // }
   }
 
+  // .legal__language
+
+  &__language {
+    background-color: transparent;
+    color: #FFFFFF;
+
+  }
 
   
 }

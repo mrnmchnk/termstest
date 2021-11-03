@@ -134,7 +134,22 @@ img {
 
 
   &__language-wrap {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+  }
+
+  &__language {
+    position: relative;
+    width: 69px;
+    background-color: transparent;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 0.9em;
+    right: 0;
+    width: 24px;
+    height: 24px;
   }
 
   &__list {
