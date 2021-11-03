@@ -159,6 +159,13 @@ img {
   position: absolute;
   top: 1.25em;
   right: 2em;
+
+  &:hover {
+    .bar {
+    background-color: #8770FF;
+    }
+  }
+  
 }
 
 .bar {
@@ -166,7 +173,10 @@ img {
   height: 2px;
   background-color: #1D212A;
   margin: 3px 0;
+  
 }
+
+
 
 
 
