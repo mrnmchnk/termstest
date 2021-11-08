@@ -46,7 +46,7 @@
   position: absolute;
   width: calc(100vw - 360px);
   height: 100vh;
-  background-color: black;
+  background-color: #F1F3F6;
   right: 100%;
   z-index: 10;
 }
@@ -57,3 +57,38 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } 
+
+
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-left: 2em;
+
+  &__image {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__panel {
+    background-color: #FFFFFF;
+  }
+
+  &__privacy {
+    background-color: #F3F1FF;
+    border-left: 2px solid #8770FF;
+  }
+
+  &__documents {
+    background-color: #F3F1FF;
+    border-left: 2px solid #8770FF;
+  }
+
+  &__arrow {
+    position: relative;
+    bottom: -0.4em;
+  }
+}
+
+
+
