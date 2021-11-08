@@ -74,19 +74,16 @@
     background-color: #FFFFFF;
   }
 
-  &__privacy {
-    background-color: #F3F1FF;
-    border-left: 2px solid #8770FF;
-  }
-
-  &__documents {
-    background-color: #F3F1FF;
-    border-left: 2px solid #8770FF;
-  }
+  
 
   &__arrow {
     position: relative;
     bottom: -0.4em;
+  }
+
+  &__activated {
+    background-color: #F3F1FF;
+    border-left: 2px solid #8770FF;
   }
 }
 

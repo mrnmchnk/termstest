@@ -1,0 +1,237 @@
+
+
+// ---------------- FEEDBACK ---------------------
+
+.feedback {
+  overflow: hidden;
+ 
+  // .feedback__wrapper
+
+  &__wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+
+   // .feedback__back-text
+
+   &__back-text {
+    position: absolute;
+    top: 2rem;
+    left: -6rem;
+    font-size: 12em;
+    font-weight: 700;
+    background: linear-gradient( #FFFFFF 0%, #F1F3F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    text-align: left;
+
+  }
+  // .feedback__content-wrapper
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8em;
+    padding-top: 7.7em;
+  }
+
+  // .feedback__title-wrapper
+
+  &__title-wrapper {
+  }
+
+  // .feedback__pretitle
+
+  &__pretitle {
+  }
+
+  // .feedback__title
+
+  &__title {
+  }
+
+  // .feedback__subtitle
+
+  &__subtitle {
+  }
+}
+
+// ---------------- FEEDBACK SLIDER ---------------------
+
+.feedback {
+  margin-bottom: 11em;
+  // .feedback__slider
+
+  &__slider {
+    margin-bottom: 3.75rem;
+  }
+
+  // .feedback__background
+
+  &__background {
+    position: relative;
+    background-color: #F9FAFC;
+    border-radius: 0.5em;
+    box-shadow: 0 2rem 3rem 1rem #D8E0EC ;
+    width: 51.5em;
+    height: 18em;
+  }
+
+  // .feedback__list
+
+  &__list {
+    position: relative;
+    top: -8em;
+    left: 4em;
+  }
+
+  // .feedback__item
+
+  &__item {
+  }
+
+  // .feedback__item-wrap
+
+  &__item-wrap {
+
+  }
+
+  // .feedback__title
+
+  &__title {
+  }
+
+  // .feedback__title
+
+  &__chevrons {
+    bottom: 6em;
+  }
+
+}
+.review {
+
+  // .review__wrap
+
+  &__wrap {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  // .review__photo
+
+  &__photo {
+    margin-right: 1em;
+  }
+
+  &__person {
+  }
+
+  // .review__name
+
+  &__name {
+  }
+
+  // .review__subttile
+
+  &__subttile {
+  }
+
+  // .review__card
+
+  &__card {
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    box-shadow: 0 2rem 3rem -1rem #D8E0EC ;
+    width: 33.75rem;
+    height: 16rem;
+    margin-right: 1.875em;
+    flex-shrink: 0;
+    padding: 2em 5em;
+
+  }
+
+  // .review__quote
+
+  &__quote {
+    margin: 0 0 0.625em 0;
+    color: #565A65;
+  }
+
+  // .review__rating-wrap
+
+  &__rating-wrap{
+    display: flex;
+    align-items: center;
+  }
+
+
+  // .review__rating
+
+  &__rating {
+    margin-right: 0.5em;
+  }
+
+  &__star {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.trustpilot {
+  display: flex;
+  justify-content: center;
+
+  & p, img {
+
+  }
+
+  // .trustpilot__text
+
+  &__text {
+    margin-right: 1rem;
+
+  }
+
+  // .trustpilot__stars
+
+  &__stars {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 1rem;
+
+  }
+
+  // .trustpilot__star
+
+  &__star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #00B67A;
+    margin-right: 2px;
+  }
+
+  // .trustpilot__star-image
+
+  &__star-image {
+    width: 16.8px;
+    height: 15.9px;
+  }
+
+  // .trustpilot__star_half
+
+  &__star_half {
+    background: linear-gradient( to right, #00B67A 50%, #DCDCE6 50%) no-repeat;
+    // background-position: -50%;
+  }
+
+  // .trustpilot__logo
+
+  &__logo {
+  }
+}
+

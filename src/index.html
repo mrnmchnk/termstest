@@ -850,74 +850,7 @@
   </main>
 	@@include('components/page-blocks/_footer.html')
 	@@include('components/page-blocks/_scripts.html')
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".slider__chevron-right",
-        prevEl: ".slider__chevron-left",
-      },
-    });
-  </script>
- 
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
-    }
-  </script>
-
-  <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function showHide() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-    function tocShowHide() {
-        document.getElementById("tocDropdown").classList.toggle("show");
-    }
-    function botShowHide() {
-        document.getElementById("botDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-  </script>
   
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "360px";
-      // document.body.style.backgroundColor = "#F1F3F6";
-      // document.body.style.backgroundColor = "#000000";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      // document.body.style.backgroundColor = "white";
-    } 
-  </script>
 </body>
 
 </html>

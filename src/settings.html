@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+
+<header class="header">
+  <h1>iTerms</h1>
+  <nav class="header__nav tablet-hidden">
+    <ul class="header__list">
+      <li class="header__item"><a href="#">Generate</a></li>
+      <li class="header__item"><a class="activated" href="#">Contact us</a></li>
+      <li class="header__item"><a href="#">Pricing</a></li>
+      <li class="header__item"><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+  <div class="dropdown header__language-wrap tablet-hidden">
+    <button onclick="showHide()" class="dropbtn header__language">
+      En
+      <img class="header__arrow" src="../../img/downarrow.svg" alt="">
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">English</a>
+      <a href="#">Russian</a>
+    </div>
+  </div>
+  <div class="header__btn-wrap tablet-hidden">
+    <p class="header__name">Albert C.</p>
+    <img src="img/Albert.png" alt="" class="header__photo">
+    <!-- <a class="header__login">Log in</a> -->
+    <!-- <button class="btn header__signup">Sign up</button> -->
+  </div>
+  <div onclick="openNav()" class="burger desktop-hidden">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</header>
+
+<main>
+  <div class="settings__container">
+    <div class="settings__background">
+      <div class="settings__profile">
+        <img src="img/settings__albert.png" alt="">
+        <h3 class="settings__name">Albert C.</h3>
+      </div>
+      <div class="settings__menu">
+        <div class="settings__item settings__documents">
+          <img class="settings__icon" src="img/Documents.svg" alt="">
+          <a href="#" class="settings__text">Documents</a>
+        </div>
+        <div class="settings__item settings__subscriptions">
+          <img class="settings__icon" src="img/Subscriptions.svg" alt="">
+          <a href="#" class="settings__text">Subscriptions</a>
+        </div>
+        <div class="settings__item settings__settings">
+          <img class="settings__icon" src="img/menu_eula.svg" alt="">
+          <a href="#" class="settings__text">Settings</a>
+        </div>
+      </div>
+    </div>
+    <div class="settings__window window">
+      <h5 class="window__title">Settings</h5>
+      <div class="window__logo-container">
+        <div class="window__image">
+          <img src="" alt="">
+        </div>
+        <div class="window__logo-text">
+          <p class="logo-title">Choose File</p>
+          <p class="logo-subtitle">JPG, JPEG, PNG max file size 5MB</p>
+          <a href="#" class="logo__browse">Browse</a>
+        </div>
+      </div>
+      <div class="window__form">
+        <form action="" class="form">
+          <input type="text" class="form__firstname">
+          <input type="text" class="form__lastname">
+          <input type="text" class="form__language">
+          <input type="text" class="form__email">
+          <a href="" class="form__password">Change Password</a>
+          <a href="" class="form__delete">Delete my Account</a>
+          <button class="form__button">Save</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+// ---------------- COMPARE ---------------------
+
+.compare {
+  text-align: center;
+
+  // .compare__wrapper
+
+  &__wrapper {
+    position: relative;
+    margin: auto;
+  }
+
+  // .compare__cards
+
+  &__cards {
+    position: absolute;
+  }
+
+  // .compare__cards-44
+
+  &__cards-44 {
+    left: -8rem;
+  }
+
+  // .compare__cards-19-9
+
+  &__cards-19-9 {
+    top: 23em;
+    left: -15rem;
+  }
+
+  // .compare__cards-49-29
+
+  &__cards-49-29 {
+    top: -3em;
+    right: -12em;
+  }
+
+  // .compare__cards-29
+
+  &__cards-29 {
+    bottom: 18em;
+    right: -15em;
+  }
+
+  &__marker {
+    position: absolute;
+    bottom: -8.3em;
+    right: 1em;
+    z-index: 10;
+  }
+  
+
+
+  // .compare__content-wrapper
+
+  &__content-wrapper {
+    background-color: #EBEEF3;
+    width: 70.7em;
+    height: 70.7em;
+    border-radius: 50%;
+    padding-top: 9em;
+  }
+  // .compare__pretitle
+
+  &__pretitle {
+  }
+
+  // .compare__title
+
+  &__title {
+  }
+
+  // .compare__subtitle
+
+  &__subtitle {
+    margin-bottom: 5em;
+  }
+
+  // .compare__price
+
+  &__price {
+    background-image: url(../img/Marker_circle.svg);
+    background-repeat: no-repeat;
+    background-position: 53% top;
+    overflow: visible;
+    position: relative;
+    padding: 4rem;
+  }
+
+  // .compare__six
+
+  &__six {
+    font-size: 4em;
+  }
+
+  &__dec {
+    position: relative;
+    top: -3em;
+  }
+
+  // .compare__benefits
+
+  &__benefits {
+    position: absolute;
+    bottom: -10em;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 1em;
+    box-shadow: 0 1em 2em rgba(34, 60, 80, 0.2);
+  }
+
+  // .compare__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 7em;
+  }
+
+  // .compare__item
+
+  &__item {
+    margin: 2em 2em;
+    width: 8em;
+
+  }
+}
+
+.price {
+
+  // .price__title
+
+  &__title {
+  }
+
+  // .price__subtitle
+
+  &__subtitle {
+  }
+}

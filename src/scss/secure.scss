@@ -1,0 +1,98 @@
+
+// ---------------- SECURE ---------------------
+
+.secure {
+  background-image: url(../img/secure_background.jpg);
+  color: #FFFFFF;
+  height: 779px;
+  
+  // .secure__wrapper
+
+  &__wrapper {
+    margin: auto;
+  }
+
+  // .secure__title-wrapper
+
+  &__title-wrapper {
+    padding-top: 7.5em;
+    margin-bottom: 3em;
+  }
+
+  // .secure__pretitle
+
+  &__pretitle {
+    color: #FFFFFF;
+
+  }
+
+  // .secure__title
+
+  &__title {
+  }
+
+  // .secure__subtitle
+
+  &__subtitle {
+    color: #FFFFFF;
+
+  }
+
+  // .secure__benefits
+
+  &__benefits {
+  }
+
+  // .secure__list
+
+  &__list {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    height: 20.5em;
+    padding-left: 2.5em;
+  }
+
+  // .secure__item
+
+  &__item {
+    margin-right: 3em;
+
+    // .secure__item_policies
+
+    &_policies {
+      align-self: flex-end;
+    }
+
+    // .secure__item_business
+
+    &_business {
+      align-self: center;
+    }
+
+    // .secure__item_pageviews
+
+    &_pageviews {
+      align-self: flex-start;
+    }
+  }
+
+  // .secure__icon
+
+  &__icon {
+  }
+}
+
+.item {
+
+  // .item__title
+
+  &__title {
+    font-size: 2.375em;
+  }
+
+  // .item__subtitle
+
+  &__subtitle {
+  }
+}

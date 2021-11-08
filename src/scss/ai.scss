@@ -1,0 +1,79 @@
+
+// ---------------- AI ---------------------
+
+.ai {
+  position: relative;
+  background: {
+    image: url(../img/screens.svg);
+    repeat: no-repeat;
+    size: 50%;
+    position: 0 3em;
+  }
+  
+  // .ai__wrapper
+
+  &__wrapper {
+    margin: 0 auto 12rem;
+  }
+
+  &__content-wrapper {
+    width: 40%;
+    margin: 0 0 0 52%;
+  }
+
+  // .ai__title-wrapper
+
+  &__title-wrapper {
+    margin-bottom: 3em;
+  }
+
+  // .ai__pretitle
+
+  &__pretitle {
+
+  }
+
+  // .ai__title
+
+  &__title {
+  }
+
+  // .ai__subtitle
+
+  &__subtitle {
+  }
+
+  // .ai__advantages
+
+  &__advantages {
+  }
+}
+
+.advantages {
+
+  // .advantages__list
+
+  &__list {
+    list-style-image: url('./../img/Done!.svg');
+    margin-bottom: 2.8em;
+    padding-left: 2em;
+  }
+
+  // .advantages__item
+
+  &__item {
+   margin-bottom: 0.7em;
+
+
+  // .advantages__btn
+
+  &__btn {
+  }
+
+  // .advantages__learn
+
+  &__learn {
+  }
+}
+
+}

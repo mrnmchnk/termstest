@@ -1,0 +1,36 @@
+
+// ---------------- INTRO ---------------------
+
+.intro {
+  background-image: url(../img/intro_background.svg);
+  background-repeat: no-repeat;
+  height: 70vh;
+  padding-top: 10em;
+  margin-bottom: 18.5em;
+
+  &__wrapper {
+    height: 23em;
+    margin: 0 auto;
+  }
+
+  &__title-wrapper {
+    width: 40%;
+  }
+
+  &__subtitle {
+    font-size: 1.25em;
+    margin-bottom: 2.5em;
+  }
+
+  &__btn {
+    margin-right: 1em;
+  }
+}
+
+
+
+
+.free {
+  color: #32D989;
+  font-weight: bold;
+}

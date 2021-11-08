@@ -1,0 +1,75 @@
+// ---------------- HEADER ---------------------
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 60%;
+  height: 4.5em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__language-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__language {
+    position: relative;
+    width: 69px;
+    background-color: transparent;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 0.9em;
+    right: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__list {
+    display: inline-flex;
+
+  }
+
+  &__item {
+    margin-right: 1.6em;
+  }
+
+  &__login {
+    text-decoration: none;
+    color: #1D212A;
+    margin-right: 1em;
+  }
+}
+
+/*---------------- BURGER ----------------*/
+
+.burger {
+  position: absolute;
+  top: 1.25em;
+  right: 2em;
+
+  &:hover {
+    .bar {
+    background-color: #8770FF;
+    }
+  }
+  
+}
+
+.bar {
+  width: 1.225em;
+  height: 2px;
+  background-color: #1D212A;
+  margin: 3px 0;
+  
+}
+
+
+

@@ -1,0 +1,85 @@
+
+
+// ---------------- DISCOVER ---------------------
+
+.discover {
+
+
+  // .discover__wrapper
+
+  &__wrapper {
+    margin: 0 auto 12rem auto;
+  }
+  // .discover__title-wrapper
+
+  &__title-wrapper {
+    width: 32em;
+    margin: 0 auto 3.75rem auto;
+    text-align: center;
+  }
+
+  // .discover__pretitle
+
+  &__pretitle {
+  }
+
+  // .discover__title
+
+  &__title {
+  }
+
+  // .discover__subtitle
+
+  &__subtitle {
+  }
+
+  // .discover__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.75rem;
+    flex-wrap: wrap;
+  }
+
+  // .discover__item
+
+  &__item {
+  }
+
+  // .discover__learn
+
+  &__learn {
+  }
+}
+
+.article {
+  width: 15.9em;
+  height: 27.75em;
+  margin-right: 1.875em;
+  color: #565A65;
+
+  // .article__image
+
+  &__image {
+    width: 15.9em;
+    height: 11.6em;
+  }
+
+  // .article__title
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  // .article__subtitle
+
+  &__subtitle {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.discover__btn-wrap {
+  width: 9.375em;
+  margin: auto;
+}
