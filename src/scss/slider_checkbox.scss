@@ -1,0 +1,48 @@
+.switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 35px;
+}
+
+.switch input {
+  display:none;
+}
+
+.track__slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.track__slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  right: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 16px;
+}
+
+input:checked + .track__slider {
+  background-color: #8770FF;
+}
+
+input:checked + .track__slider:before {
+  transform: translateX(-12px);
+}
+
+.track__slider.round {
+  border-radius: 34px;
+}
+
+.track__slider.round:before {
+  border-radius: 50%;
+}

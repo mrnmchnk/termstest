@@ -34,9 +34,13 @@
 
       как сделать непрозрачный фон у меню
 
+      input type file
+
  -->
 
 <body>
+  <div id="fade" class="fade"></div>
+
 	@@include('components/page-blocks/_header.html')
 	<main class="main">
 
@@ -341,7 +345,12 @@
             </p>
             <div class="compare__track track desktop-hidden mobile-hidden">
               <p class="track__first">First month</p>
-              <img src="img/track_bar.svg" alt="">
+              <div class="track__switch">
+                <label class="switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="track__slider round"></div>
+                </label>
+              </div>
               <p class="track__following">Following months</p>
             </div>
             <div class="compare__price">

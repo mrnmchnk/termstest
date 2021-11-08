@@ -1,0 +1,334 @@
+// html {
+//   background-color: red;
+// }
+
+
+
+.settings {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/intro_background.svg);
+  background-repeat: no-repeat;
+
+  // .settings__container
+
+  &__wrapper {
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 10em;
+
+  }
+
+  // .settings__container
+
+  &__container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 588px;
+    background-color: #F5F7FA;
+    border-radius: 1em;
+    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 38px 56px 0px rgba(191, 204, 225, 0.39);
+
+  }
+
+  // .settings__background
+
+  &__background {
+    flex-shrink: 0;
+    width: 255px;
+    height: 100%;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+
+  // .settings__profile
+
+  &__profile {
+    position: relative;
+    top: -3em;
+    margin-bottom: 5em;
+  }
+
+  // .settings__photo
+
+  &__photo {
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-bottom: 1em;
+  }
+
+  // .settings__name
+
+  &__name {
+    font-size: 1.125em;
+    font-weight: 400;
+  }
+
+  // .settings__menu
+
+  &__menu {
+    text-align: left;
+  }
+
+  // .settings__item
+
+  &__item {
+    // margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    height: 3em;
+    padding-left: 3em;
+    vertical-align: middle;
+
+    &:hover {
+      background-color: #f3f1ff;
+      border-left: 2px solid #8770ff;
+      color: #8770ff;
+    }
+  }
+
+  // .settings__documents
+
+  &__documents {
+  }
+
+  // .settings__icon
+
+  &__icon {
+    margin-right: 0.5em;
+  }
+
+  // .settings__text
+
+  &__text {
+    
+  }
+  
+  &__text {
+  }
+
+  // .settings__subscriptions
+
+  &__subscriptions {
+  }
+
+  // .settings__settings
+
+  &__settings {
+  }
+
+  // .settings__settings
+
+  &__activated {
+    background-color: #F3F1FF;
+    border-left: 2px solid #8770FF;
+    color: #8770FF !important;
+  }
+
+  // .settings__window
+
+  &__window {
+  }
+}
+
+.window {
+  flex-shrink: 0;
+  position: relative;
+  top: -3em;
+  right: -2em;
+  width: 51.5em;
+  height: auto;
+  background-color: #FFFFFF;
+  border-radius: 1em;
+  // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 38px 56px 0px rgba(191, 204, 225, 0.39);
+  padding: 3em 1.5em 0;
+
+  // .window__title
+
+  &__title {
+  }
+
+  // .window__logo-container
+
+  &__logo-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1.5em 0;
+  }
+
+  // .window__image
+
+  &__image {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 81px;
+    height: 81px;
+    margin-right: 1.5em;
+    border: 1px solid #32D989;
+    border-radius: 50%;
+  }
+
+
+  &__image * {
+    cursor: pointer;
+  }
+
+  // .window__logo-text
+
+  &__logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 7em;
+  }
+
+  // .window__form
+
+  &__form {
+  }
+}
+
+.formlink {
+  width: auto;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #8770FF;
+}
+
+#profilepic {
+  display: none;
+}
+
+.logo-title {
+  font-style: 400px;
+}
+.logo-subtitle {
+  font-size: 0.75em;
+  color: #8B94AD;
+}
+
+.logo {
+
+  // .logo__browse
+
+  &__browse {
+  }
+}
+
+legend {
+  font-size: 0.75em;
+  color: #565A65;
+}
+
+.form {
+  width: 630px;
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-areas: 
+  "first last"
+  "lang ."
+  "email password"
+  "delete button"
+  ;
+
+
+  // .form__firstname-wrapper
+
+  &__firstname-wrapper {
+    grid-area: first;
+    
+  }
+  // .form__lastname-wrapper
+
+  &__lastname-wrapper {
+    grid-area: last;
+    
+  }
+  // .form__language-wrapper
+
+  &__language-wrapper {
+    grid-area: lang;
+  }
+  // .form__email-wrapper
+
+  &__email-wrapper {
+    grid-area: email;
+  }
+
+  // .form__password
+
+  &__password {
+    grid-area: password;
+    justify-self: center;
+    align-self: end;
+  }
+
+  // .form__delete
+
+  &__delete {
+    grid-area: delete;
+    align-self: end;
+  }
+
+  // .form__button
+
+  &__button {
+    width: 133px;
+    grid-area: button;
+    justify-self: center;
+  }
+  
+
+  &__wrapper, &__wrapper * {
+    min-width: 250px;
+    max-width: 300px;
+  }
+
+  // .form__wrapper
+
+  &__wrapper {
+    border: none;
+    border-bottom: 1px solid #B6BFD9;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+
+  // .form__field
+
+  &__field {
+    width: 100%;
+    border: none;
+    color: #1D212A;
+  }
+
+  // .form__firstname
+
+  &__firstname {
+  }
+
+  // .form__lastname
+
+  &__lastname {
+  }
+
+  // .form__language
+
+  &__language {
+    background-color: #fff;
+  }
+
+  // .form__email
+
+  &__email {
+  }
+
+}
+
+

@@ -1,0 +1,197 @@
+@media (max-width: 769px) {
+
+  h1 {
+    font-weight: 400 !important;
+  }
+ 
+  .settings {
+    background-image: none;
+    background-color: #F1F3F6;
+
+		// .settings__wrapper
+
+		&__wrapper {
+      width: auto;
+      padding: 5.4em 2.8em 0;
+		}
+
+		// .settings__container
+
+		&__container {
+		}
+
+		// .settings__background
+
+		&__background {
+      display: none;
+		}
+
+		// .settings__profile
+
+		&__profile {
+		}
+
+		// .settings__photo
+
+		&__photo {
+		}
+
+		// .settings__name
+
+		&__name {
+		}
+
+		// .settings__menu
+
+		&__menu {
+		}
+
+		// .settings__item
+
+		&__item {
+		}
+
+		// .settings__documents
+
+		&__documents {
+		}
+
+		// .settings__icon
+
+		&__icon {
+		}
+
+		// .settings__text
+
+		&__text {
+		}
+
+		// .settings__subscriptions
+
+		&__subscriptions {
+		}
+
+		// .settings__settings
+
+		&__settings {
+		}
+
+		// .settings__activated
+
+		&__activated {
+		}
+
+		// .settings__window
+
+		&__window {
+		}
+}
+.window {
+  position: static;
+  width: 100%;
+
+		// .window__title
+
+		&__title {
+		}
+
+		// .window__logo-container
+
+		&__logo-container {
+		}
+
+		// .window__image
+
+		&__image {
+		}
+
+		// .window__logo-text
+
+		&__logo-text {
+		}
+
+		// .window__form
+
+		&__form {
+		}
+}
+.logo-wrapper {
+}
+.logo-title {
+}
+.logo-subtitle {
+}
+.formlink {
+}
+.form {
+
+		// .form__wrapper
+
+		&__wrapper {
+		}
+
+		// .form__firstname-wrapper
+
+		&__firstname-wrapper {
+		}
+
+		// .form__field
+
+		&__field {
+		}
+
+		// .form__firstname
+
+		&__firstname {
+		}
+
+		// .form__lastname-wrapper
+
+		&__lastname-wrapper {
+		}
+
+		// .form__lastname
+
+		&__lastname {
+		}
+
+		// .form__language-wrapper
+
+		&__language-wrapper {
+		}
+
+		// .form__language
+
+		&__language {
+		}
+
+		// .form__email-wrapper
+
+		&__email-wrapper {
+		}
+
+		// .form__email
+
+		&__email {
+		}
+
+		// .form__password
+
+		&__password {
+		}
+
+		// .form__delete
+
+		&__delete {
+		}
+
+		// .form__button
+
+		&__button {
+		}
+}
+.btn {
+}
+
+
+}

@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <title>Settings</title>
+</head> -->
+@@include('components/page-blocks/_head.html',{
+  "lang":"en",
+  "title":"Easy-webdev-startpack v3.0",
+  "description":"Gulp pack for easy html/php markup development",
+  "keywords":"",
+  "favicon":"img/favicons/favicon",
+  })
+
 <body>
-  
+
 
 
 
@@ -31,11 +39,10 @@
       <a href="#">Russian</a>
     </div>
   </div>
-  <div class="header__btn-wrap tablet-hidden">
+  <div class="header__profile tablet-hidden">
     <p class="header__name">Albert C.</p>
-    <img src="img/Albert.png" alt="" class="header__photo">
-    <!-- <a class="header__login">Log in</a> -->
-    <!-- <button class="btn header__signup">Sign up</button> -->
+    <img class="header__photo" src="img/Albert.png" alt="" >
+    <img class="header__profile-arrow" src="img/downarrow.svg" alt="">
   </div>
   <div onclick="openNav()" class="burger desktop-hidden">
     <div class="bar"></div>
@@ -44,53 +51,84 @@
   </div>
 </header>
 
-<main>
-  <div class="settings__container">
-    <div class="settings__background">
-      <div class="settings__profile">
-        <img src="img/settings__albert.png" alt="">
-        <h3 class="settings__name">Albert C.</h3>
-      </div>
-      <div class="settings__menu">
-        <div class="settings__item settings__documents">
-          <img class="settings__icon" src="img/Documents.svg" alt="">
-          <a href="#" class="settings__text">Documents</a>
+<main class="settings">
+  <div class="settings__wrapper">
+    <div class="settings__container">
+      <div class="settings__background">
+        <div class="settings__profile">
+          <img class="settings__photo" src="img/settings__albert.png" alt="">
+          <h3 class="settings__name">Albert C.</h3>
         </div>
-        <div class="settings__item settings__subscriptions">
-          <img class="settings__icon" src="img/Subscriptions.svg" alt="">
-          <a href="#" class="settings__text">Subscriptions</a>
-        </div>
-        <div class="settings__item settings__settings">
-          <img class="settings__icon" src="img/menu_eula.svg" alt="">
-          <a href="#" class="settings__text">Settings</a>
-        </div>
-      </div>
-    </div>
-    <div class="settings__window window">
-      <h5 class="window__title">Settings</h5>
-      <div class="window__logo-container">
-        <div class="window__image">
-          <img src="" alt="">
-        </div>
-        <div class="window__logo-text">
-          <p class="logo-title">Choose File</p>
-          <p class="logo-subtitle">JPG, JPEG, PNG max file size 5MB</p>
-          <a href="#" class="logo__browse">Browse</a>
+        <div class="settings__menu">
+          <div class="settings__item settings__documents">
+            <img class="settings__icon" src="img/Documents.svg" alt="">
+            <a href="#" class="settings__text">Documents</a>
+          </div>
+          <div class="settings__item settings__subscriptions">
+            <img class="settings__icon" src="img/Subscriptions.svg" alt="">
+            <a href="#" class="settings__text">Subscriptions</a>
+          </div>
+          <div class="settings__item settings__settings settings__activated">
+            <img class="settings__icon" src="img/menu_eula.svg" alt="">
+            <a href="#" class="settings__text">Settings</a>
+          </div>
         </div>
       </div>
-      <div class="window__form">
-        <form action="" class="form">
-          <input type="text" class="form__firstname">
-          <input type="text" class="form__lastname">
-          <input type="text" class="form__language">
-          <input type="text" class="form__email">
-          <a href="" class="form__password">Change Password</a>
-          <a href="" class="form__delete">Delete my Account</a>
-          <button class="form__button">Save</button>
-        </form>
-      </div>
-    </div>
 
+      <!------------------ SETTINGS WINDOW ------------------->
+
+      <div class="settings__window window">
+        <h5 class="window__title">Settings</h5>
+        <div class="window__logo-container">
+          <div class="window__image">
+            <label  for="profilepic">
+              <img src="img/camera.svg" alt="">
+            </label>
+          </div>
+          <div class="window__logo-text">
+            <div class="logo-wrapper">
+              <p class="logo-title">Choose File</p>
+              <p class="logo-subtitle">JPG, JPEG, PNG max file size 5MB</p>
+            </div>
+            <label class="formlink" for="profilepic">Browse</label>
+            <input type="file" id="profilepic" name="Browse">
+          </div>
+        </div>
+        <div class="window__form">
+          <form action="" class="form">
+            
+            <fieldset class="form__wrapper form__firstname-wrapper">
+              <legend>First Name</legend> 
+              <input type="text" class="form__field form__firstname" placeholder="Albert">
+            </fieldset>
+
+            <fieldset class="form__wrapper form__lastname-wrapper">
+              <legend>Last Name</legend> 
+              <input type="text" class="form__field form__lastname" placeholder="Cortis">
+            </fieldset>
+
+            <fieldset class="form__wrapper form__language-wrapper">
+              <legend>Language</legend> 
+              <!-- <input type="text" class="form__field form__language" placeholder="Albert"> -->
+              <select name="" id="form__language" class="form__field form__language">
+                <option value="English" selected>English - United States</option>
+                <option value="Russian">Russian - Russian Federation</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="form__wrapper form__email-wrapper">
+              <legend>Email</legend> 
+              <input type="email" class="form__field form__email" placeholder="albert.cortis@gmail.com">
+            </fieldset>
+
+            <a href="#" class="formlink form__password">Change Password</a>
+            <a href="#" class="formlink form__delete mobile-hidden">Delete my Account</a>
+            <button class="btn form__button">Save</button>
+            <a href="#" class="formlink form__delete-mobile desktop-hidden">Delete my Account</a>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
 

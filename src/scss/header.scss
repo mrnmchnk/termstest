@@ -46,7 +46,36 @@
     color: #1D212A;
     margin-right: 1em;
   }
+
+  // .header__profile
+
+  &__profile {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;  
+  }
+
+  // .header__name
+
+  &__name {
+    margin-right: 1em;
+  }
+
+  // .header__photo
+
+  &__photo {
+    margin-right: 1em;
+    width: 48px;
+  }
+
+  // .header__profile-arrow
+
+  &__profile-arrow {
+    width: 24px;
+  }
 }
+
+
 
 /*---------------- BURGER ----------------*/
 

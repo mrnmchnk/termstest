@@ -1,0 +1,202 @@
+@media (max-width: 361px) {
+
+  h1 {
+  }
+ 
+  .settings {
+
+		// .settings__wrapper
+
+		&__wrapper {
+      padding: 5.4em 0.9em 0;
+      height: auto;
+		}
+
+		// .settings__container
+
+		&__container {
+      height: auto;
+		}
+
+		// .settings__background
+
+		&__background {
+		}
+
+		// .settings__profile
+
+		&__profile {
+		}
+
+		// .settings__photo
+
+		&__photo {
+		}
+
+		// .settings__name
+
+		&__name {
+		}
+
+		// .settings__menu
+
+		&__menu {
+		}
+
+		// .settings__item
+
+		&__item {
+		}
+
+		// .settings__documents
+
+		&__documents {
+		}
+
+		// .settings__icon
+
+		&__icon {
+		}
+
+		// .settings__text
+
+		&__text {
+		}
+
+		// .settings__subscriptions
+
+		&__subscriptions {
+		}
+
+		// .settings__settings
+
+		&__settings {
+		}
+
+		// .settings__activated
+
+		&__activated {
+		}
+
+		// .settings__window
+
+		&__window {
+		}
+}
+.window {
+  padding: 2em 1.5em;
+
+		// .window__title
+
+		&__title {
+      font-size: 1.125em;
+		}
+
+		// .window__logo-container
+
+		&__logo-container {
+		}
+
+		// .window__image
+
+		&__image {
+      flex-shrink: 0;
+		}
+
+		// .window__logo-text
+
+		&__logo-text {
+		}
+
+		// .window__form
+
+		&__form {
+		}
+}
+.logo-wrapper {
+}
+.logo-title {
+}
+.logo-subtitle {
+}
+.formlink {
+}
+.form {
+  display: block;
+  width: auto;
+
+		// .form__wrapper
+
+		&__wrapper {
+      margin-bottom: 1.5em;
+		}
+
+		// .form__firstname-wrapper
+
+		&__firstname-wrapper {
+		}
+
+		// .form__field
+
+		&__field {
+		}
+
+		// .form__firstname
+
+		&__firstname {
+		}
+
+		// .form__lastname-wrapper
+
+		&__lastname-wrapper {
+		}
+
+		// .form__lastname
+
+		&__lastname {
+		}
+
+		// .form__language-wrapper
+
+		&__language-wrapper {
+		}
+
+		// .form__language
+
+		&__language {
+		}
+
+		// .form__email-wrapper
+
+		&__email-wrapper {
+		}
+
+		// .form__email
+
+		&__email {
+		}
+
+		// .form__password
+
+		&__password {
+      display: block;
+      margin-bottom: 1.5em;
+		}
+
+		// .form__delete-mobile
+
+		&__delete-mobile {
+      display: inline !important;
+		}
+
+		// .form__button
+
+		&__button {
+      width: 120px;
+		}
+}
+.btn {
+}
+
+
+}
