@@ -69,3 +69,28 @@
       // document.body.style.backgroundColor = "white";
     } 
   </script>
+
+  <script>
+
+
+    const imgDiv = document.querySelector("window__image");
+    const pic = document.querySelector("#pic");
+    const file = document.querySelector("#profilepic");
+    const uploadBtn = document.querySelector("#upload");
+
+    file.addEventListener("change", function(){
+      const choosedFile = this.files[0];
+
+      if (choosedFile) {
+        const reader = new FileReader();
+        reader.addEventListener("load", function(){
+          pic.setAttribute("src", reader.result);
+        });
+
+        reader.readAsDataURL(choosedFile);
+        
+      }
+    });
+
+
+  </script>

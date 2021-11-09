@@ -70,6 +70,7 @@
   top: 100%;
   left: 0;
   z-index: 1;
+  color: #1D212A !important;
 }
 
 .dropdown-content a {
@@ -82,6 +83,7 @@
 .dropdown a:hover {
   background-color: #F3F1FF;
   color: #8770FF;
+  border-left: 2px solid #8770FF;
 }
 
 .show {
