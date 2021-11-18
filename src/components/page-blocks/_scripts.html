@@ -1,3 +1,17 @@
+<!--  TODO
+  вынести джс в отдельные файлы
+  переделать(зарефакторить) джс
+  заменить все вары на лэты
+  убрать лишние объявления переменной вне циклов
+  переделать все на квериселекторы
+  заменить циклы фор на циклы перебора массивов и методы работы с массивами
+  сделать на странице настроек чтобы вставал юзерпик
+  отследить когда в инпуте появится что-то и вставить это что-то в див с зет индексом повыше
+
+-->
+
+
+
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -11,9 +25,9 @@
   </script>
  
   <script>
+    
+    // заменить все вары, изменить циклы на методы работы с массивами
     var acc = document.getElementsByClassName("accordion");
-    var i;
-
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
@@ -41,6 +55,7 @@
     }
 
     // Close the dropdown if the user clicks outside of it
+    // повешать обработчик на кнопку
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
 
@@ -70,30 +85,6 @@
     } 
   </script>
 
-  <!-- <script>
-
-    const imgDiv = document.querySelector("window__image");
-    const pic = document.querySelector("#pic");
-    const file = document.querySelector("#profilepic");
-    const uploadBtn = document.querySelector("#upload");
-
-    file.addEventListener("change", function(){
-      const choosedFile = this.files[0];
-
-      if (choosedFile) {
-        const reader = new FileReader();
-        reader.addEventListener("load", function(){
-          pic.setAttribute("src", reader.result);
-        });
-
-        reader.readAsDataURL(choosedFile);
-
-      }
-    });
-
-
-  </script> -->
-
 
 
 <script>
@@ -109,6 +100,8 @@
   }, false);
 
   fileElem.addEventListener("change", handleFiles, false);
+  
+
 
   function handleFiles() {
     if (!this.files.length) {
