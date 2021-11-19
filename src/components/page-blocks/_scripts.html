@@ -1,143 +1,74 @@
-<!--  TODO
-  вынести джс в отдельные файлы
-  переделать(зарефакторить) джс
-  заменить все вары на лэты
-  убрать лишние объявления переменной вне циклов
-  переделать все на квериселекторы
-  заменить циклы фор на циклы перебора массивов и методы работы с массивами
-  сделать на странице настроек чтобы вставал юзерпик
-  отследить когда в инпуте появится что-то и вставить это что-то в див с зет индексом повыше
-
--->
-
-
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- SWIPER -->
 
   <script>
-    let swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".slider__chevron-right",
-        prevEl: ".slider__chevron-left",
-      },
-    });
+    // let swiper = new Swiper(".mySwiper", {
+    //   navigation: {
+    //     nextEl: ".slider__chevron-right",
+    //     prevEl: ".slider__chevron-left",
+    //   },
+    // });
   </script>
 
   <!-- ACCORDEON -->
  
   <script>
-    // заменить все вары, изменить циклы на методы работы с массивами
-    let acc = document.querySelectorAll(".accordion");
+    // let acc = document.querySelectorAll(".accordion");
 
-    let accOpener = function() {
-      this.classList.toggle("active");  
-      let panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    }
-    acc.forEach( elem => elem.addEventListener("click", accOpener ) );
-    // for (i = 0; i < acc.length; i++) {
-    //   acc[i].addEventListener("click", accOpener );
+    // let accOpener = function() {
+    //   this.classList.toggle("active");  
+    //   let panel = this.nextElementSibling;
+    //   if (panel.style.maxHeight) {
+    //     panel.style.maxHeight = null;
+    //   } else {
+    //     panel.style.maxHeight = panel.scrollHeight + "px";
+    //   }
     // }
+    // acc.forEach( elem => elem.addEventListener("click", accOpener ) );
   </script>
 
   <!-- DROPDOWNS -->
 
   <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function showHide() {
-        document.querySelector("#myDropdown").classList.toggle("show");
-    }
-    function tocShowHide() {
-        document.querySelector("#tocDropdown").classList.toggle("show");
-    }
-    function botShowHide() {
-        document.querySelector("#botDropdown").classList.toggle("show");
-    }
+    // function showHide() {
+    //     document.querySelector("#myDropdown").classList.toggle("show");
+    // }
+    // function tocShowHide() {
+    //     document.querySelector("#tocDropdown").classList.toggle("show");
+    // }
+    // function botShowHide() {
+    //     document.querySelector("#botDropdown").classList.toggle("show");
+    // }
 
-    // Close the dropdown if the user clicks outside of it
-    // повешать обработчик на кнопку
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.querySelectorAll(".dropdown-content");
-
-        // for (i = 0; i < dropdowns.length; i++) {
-        //   let openDropdown = dropdowns[i];
-        //   if (openDropdown.classList.contains('show')) {
-        //     openDropdown.classList.remove('show');
-        //   }
-        // }
-        dropdowns.forEach( elem => { 
-          if ( elem.classList.contains('show')) {
-            elem.classList.remove('show');
-          }
-         } )
-      }
-    }
+    // // Close the dropdown if the user clicks outside of it
+    // // повешать обработчик на кнопку
+    // window.onclick = function(event) {
+    //   if (!event.target.matches('.dropbtn')) {
+    //     let dropdowns = document.querySelectorAll(".dropdown-content");
+    //     dropdowns.forEach( elem => { 
+    //       if ( elem.classList.contains('show')) {
+    //         elem.classList.remove('show');
+    //       }
+    //      } )
+    //   }
+    // }
   </script>
 
   <!-- SIDE MENU -->
   
 <script>
-  function openNav() {
-    document.querySelector("#mySidenav").style.width = "360px";
-    document.querySelector("#fade").style.height = "100vh";
-    // document.body.style.backgroundColor = "#F1F3F6";
-  }
+  // function openNav() {
+  //   document.querySelector("#mySidenav").style.width = "360px";
+  //   document.querySelector("#fade").style.height = "100vh";
+  // }
 
-  function closeNav() {
-    document.querySelector("#mySidenav").style.width = "0";
-    document.querySelector("#fade").style.height = "0";
-    // document.body.style.backgroundColor = "white";
-  } 
+  // function closeNav() {
+  //   document.querySelector("#mySidenav").style.width = "0";
+  //   document.querySelector("#fade").style.height = "0";
+  // } 
 </script>
 
 
-<script>
-  const fileSelect = document.querySelector("#fileSelect"),
-      fileElem = document.querySelector("#fileElem"),
-      fileList = document.querySelector("#fileList");
-
-  fileSelect.addEventListener("click", function (e) {
-    if (fileElem) {
-      fileElem.click();
-    }
-    e.preventDefault(); // prevent navigation to "#"
-  }, false);
-
-  fileElem.addEventListener("change", handleFiles, false);
-
-
-  function handleFiles() {
-    if (!this.files.length) {
-      fileList.innerHTML = "<p>No files selected!</p>";
-    } else {
-      fileList.innerHTML = "";
-      const list = document.createElement("ul");
-      fileList.appendChild(list);
-      for (let i = 0; i < this.files.length; i++) {
-        const li = document.createElement("li");
-        list.appendChild(li);
-
-        const img = document.createElement("img");
-        img.src = URL.createObjectURL(this.files[i]);
-        img.height = 60;
-        img.onload = function() {
-          URL.revokeObjectURL(this.src);
-        }
-        li.appendChild(img);
-        const info = document.createElement("span");
-        info.innerHTML = this.files[i].name + ": " + this.files[i].size + " bytes";
-        li.appendChild(info);
-      }
-    }
-  }
-</script>

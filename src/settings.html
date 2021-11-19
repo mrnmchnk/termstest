@@ -85,15 +85,6 @@
               <img id="pic" src="img/camera.svg" alt="">
             </label>
           </div>
-          <!-- <div class="test">
-            <form action="" class="testform">
-              <input type="file" id="fileElem" multiple accept="image/*" style="display:none">
-            </form>
-            <a href="#" id="fileSelect">Select some files</a>
-            <div id="fileList">
-              <p>No files selected!</p>
-            </div>
-          </div> -->
           <div class="window__logo-text">
             <div class="logo-wrapper">
               <p class="logo-title">Choose File</p>
@@ -140,23 +131,40 @@
     </div>
   </div>
 
+<!-- 
+  заменять просто src картинки
+  все таски запихнуть в галпфайл
+  распихать все скрипты по отдельным джс файлам
+ -->
+
   <script>
     let inputElem = document.querySelector('#profilepic');
-    // let uploadedFile = document.querySelector('#profilepic').files[0];
     function handleFiles() {
-      let uploadedFiles = this.files;
-      let uploadedFile = uploadedFiles[0];
+      let uploadedFile = this.files[0];
       console.log(uploadedFile);
-      image = new Image();
-      image.src = window.URL.createObjectURL(uploadedFile);
-      image.width = 81;
       let replacedPic = document.querySelector('#pic');
-      replacedPic.replaceWith(image);
+      replacedPic.src = window.URL.createObjectURL(uploadedFile);
+      replacedPic.width = 100;
+      replacedPic.style.borderRadius = '50%';
     }
     inputElem.addEventListener("change", handleFiles, false);
+    
+    // function handleFiles() {
+    //   // let uploadedFiles = this.files;
+    //   let uploadedFile = this.files[0];
+    //   console.log(uploadedFile);
 
-
-
+      
+    //   image = new Image();
+    //   image.src = window.URL.createObjectURL(uploadedFile);
+    //   // console.log(image.src);
+    //   image.width = 100;
+    //   image.style.borderRadius = '50%';
+    //   let replacedPic = document.querySelector('#pic');
+    //   replacedPic.replaceWith(image);
+    //   image.src = window.URL.createObjectURL(uploadedFile);
+    //   console.log(image.src);
+    // }
   </script>
 </main>
 
