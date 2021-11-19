@@ -85,7 +85,6 @@
               <img id="pic" src="img/camera.svg" alt="">
             </label>
           </div>
-
           <!-- <div class="test">
             <form action="" class="testform">
               <input type="file" id="fileElem" multiple accept="image/*" style="display:none">
@@ -95,14 +94,13 @@
               <p>No files selected!</p>
             </div>
           </div> -->
-
           <div class="window__logo-text">
             <div class="logo-wrapper">
               <p class="logo-title">Choose File</p>
               <p class="logo-subtitle">JPG, JPEG, PNG max file size 5MB</p>
             </div>
             <label class="formlink" for="profilepic">Browse</label>
-            <input type="file" id="profilepic" name="Browse">
+            <input type="file" id="profilepic" name="Browse" accept="image/*" >
           </div>
         </div>
         <div class="window__form">
@@ -141,6 +139,25 @@
       </div>
     </div>
   </div>
+
+  <script>
+    let inputElem = document.querySelector('#profilepic');
+    // let uploadedFile = document.querySelector('#profilepic').files[0];
+    function handleFiles() {
+      let uploadedFiles = this.files;
+      let uploadedFile = uploadedFiles[0];
+      console.log(uploadedFile);
+      image = new Image();
+      image.src = window.URL.createObjectURL(uploadedFile);
+      image.width = 81;
+      let replacedPic = document.querySelector('#pic');
+      replacedPic.replaceWith(image);
+    }
+    inputElem.addEventListener("change", handleFiles, false);
+
+
+
+  </script>
 </main>
 
 

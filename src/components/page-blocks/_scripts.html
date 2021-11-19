@@ -15,82 +15,96 @@
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- SWIPER -->
+
   <script>
-    var swiper = new Swiper(".mySwiper", {
+    let swiper = new Swiper(".mySwiper", {
       navigation: {
         nextEl: ".slider__chevron-right",
         prevEl: ".slider__chevron-left",
       },
     });
   </script>
+
+  <!-- ACCORDEON -->
  
   <script>
-    
     // заменить все вары, изменить циклы на методы работы с массивами
-    var acc = document.getElementsByClassName("accordion");
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-      });
+    let acc = document.querySelectorAll(".accordion");
+
+    let accOpener = function() {
+      this.classList.toggle("active");  
+      let panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
     }
+    acc.forEach( elem => elem.addEventListener("click", accOpener ) );
+    // for (i = 0; i < acc.length; i++) {
+    //   acc[i].addEventListener("click", accOpener );
+    // }
   </script>
+
+  <!-- DROPDOWNS -->
 
   <script>
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
     function showHide() {
-        document.getElementById("myDropdown").classList.toggle("show");
+        document.querySelector("#myDropdown").classList.toggle("show");
     }
     function tocShowHide() {
-        document.getElementById("tocDropdown").classList.toggle("show");
+        document.querySelector("#tocDropdown").classList.toggle("show");
     }
     function botShowHide() {
-        document.getElementById("botDropdown").classList.toggle("show");
+        document.querySelector("#botDropdown").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it
     // повешать обработчик на кнопку
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
+        let dropdowns = document.querySelectorAll(".dropdown-content");
 
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
+        // for (i = 0; i < dropdowns.length; i++) {
+        //   let openDropdown = dropdowns[i];
+        //   if (openDropdown.classList.contains('show')) {
+        //     openDropdown.classList.remove('show');
+        //   }
+        // }
+        dropdowns.forEach( elem => { 
+          if ( elem.classList.contains('show')) {
+            elem.classList.remove('show');
           }
-        }
+         } )
       }
     }
   </script>
+
+  <!-- SIDE MENU -->
   
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "360px";
-      document.getElementById("fade").style.height = "100vh";
-      // document.body.style.backgroundColor = "#F1F3F6";
-    }
+<script>
+  function openNav() {
+    document.querySelector("#mySidenav").style.width = "360px";
+    document.querySelector("#fade").style.height = "100vh";
+    // document.body.style.backgroundColor = "#F1F3F6";
+  }
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("fade").style.height = "0";
-      // document.body.style.backgroundColor = "white";
-    } 
-  </script>
-
+  function closeNav() {
+    document.querySelector("#mySidenav").style.width = "0";
+    document.querySelector("#fade").style.height = "0";
+    // document.body.style.backgroundColor = "white";
+  } 
+</script>
 
 
 <script>
-  const fileSelect = document.getElementById("fileSelect"),
-      fileElem = document.getElementById("fileElem"),
-      fileList = document.getElementById("fileList");
+  const fileSelect = document.querySelector("#fileSelect"),
+      fileElem = document.querySelector("#fileElem"),
+      fileList = document.querySelector("#fileList");
 
   fileSelect.addEventListener("click", function (e) {
     if (fileElem) {
@@ -100,7 +114,6 @@
   }, false);
 
   fileElem.addEventListener("change", handleFiles, false);
-  
 
 
   function handleFiles() {
