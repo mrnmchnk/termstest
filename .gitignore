@@ -4,3 +4,6 @@ yarn.lock
 process.json
 build
 img
+dist
+src/css
+

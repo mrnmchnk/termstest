@@ -1,55 +1,90 @@
-const gulp = require('gulp');
-const requireDir = require('require-dir');
-const tasks = requireDir('./tasks');
+let { src, dest } = require('gulp');
+let gulp = require('gulp');
+let browsersync = require('browser-sync').create();
+let sass = require('gulp-sass')(require('sass'));
+let autoprefixer = require('gulp-autoprefixer');
+let mediaCss = require('gulp-group-css-media-queries');
+let cleanCss = require('gulp-clean-css');
+let uglify = require('gulp-uglify-es').default;
+let rename = require('gulp-rename');
+let fileInclude = require('gulp-file-include');
 
-exports.libs_style = tasks.libs_style;
-exports.svg_css = tasks.svg_css;
-exports.fonts = tasks.fonts;
-exports.style = tasks.style;
-exports.build_js = tasks.build_js;
-exports.libs_js = tasks.libs_js;
-exports.dev_js = tasks.dev_js;
-exports.html = tasks.html;
-exports.php = tasks.php;
-exports.rastr = tasks.rastr;
-exports.webp = tasks.webp;
-exports.svg_sprite = tasks.svg_sprite;
-exports.ttf = tasks.ttf;
-exports.ttf2 = tasks.ttf2;
-exports.bs_html = tasks.bs_html;
-exports.bs_php = tasks.bs_php;
-exports.watch = tasks.watch;
-exports.deploy = tasks.deploy;
+let path = {
+    src: {
+        html: '*.html',
+        scss: 'src/scss/*.scss',
+        js: 'src/js/*.js',
+        img: 'src/img/*.{svg,png,jpeg,jpg,gif}'
+    },
 
-exports.default = gulp.parallel(
-  exports.libs_style,
-  exports.svg_css,
-  exports.ttf,
-  exports.ttf2,
-  exports.fonts,
-  exports.style,
-  exports.libs_js,
-  exports.dev_js,
-  exports.rastr,
-  exports.webp,
-  exports.svg_sprite,
-  exports.html,
-  exports.bs_html,
-  exports.watch
-)
-exports.dev_php = gulp.parallel(
-  exports.libs_style,
-  exports.svg_css,
-  exports.ttf,
-  exports.ttf2,
-  exports.fonts,
-  exports.style,
-  exports.libs_js,
-  exports.dev_js,
-  exports.rastr,
-  exports.webp,
-  exports.svg_sprite,
-  exports.php,
-  exports.bs_php,
-  exports.watch
-)
+    build: {
+        css: 'dist/css/',
+        js: 'dist/js/',
+        img: 'dist/img/'
+    },
+
+    watch: {
+        html: '*.html',
+        scss: 'src/scss/**/*.scss',
+        js: 'src/js/**/*.js',
+        img: 'src/img/**/*.{svg,png,jpeg,jpg,gif}'
+    }
+}
+
+
+function browserSync() {
+    browsersync.init({
+        server: {
+            baseDir: "./"
+        },
+        notify: false
+    });
+}
+
+function html() {
+    return src(path.src.html)
+        .pipe(browsersync.stream())
+}
+
+function css() {
+    return src(path.src.scss)
+        .pipe(sass())
+        .pipe(autoprefixer({
+            cascade: true
+        }))
+        .pipe(mediaCss())
+        .pipe(dest(path.build.css))
+        .pipe(cleanCss())
+        .pipe(rename({
+            extname: '.min.css'
+        }))
+        .pipe(dest(path.build.css))
+        .pipe(browsersync.stream())
+}
+
+function js() {
+    return src(path.src.js)
+        .pipe(fileInclude())
+        .pipe(dest(path.build.js))
+        .pipe(uglify())
+        .pipe(rename({
+            extname: '.min.js'
+        }))
+        .pipe(dest(path.build.js))
+        .pipe(browsersync.stream())
+}
+
+function img() {
+    return src(path.src.img)
+        .pipe(dest(path.build.img))
+        .pipe(browsersync.stream())
+}
+
+function watchFiles() {
+    gulp.watch([path.watch.html], html);
+    gulp.watch([path.watch.scss], css);
+    gulp.watch([path.watch.js], js);
+    gulp.watch([path.watch.img], img);
+}
+
+exports.default = gulp.parallel(html, css, js, img, watchFiles, browserSync);
